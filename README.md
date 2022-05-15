@@ -20,6 +20,7 @@ To run the experiment of Model Parallel for example
 
 
 HARDWARE REQUIREMENTS:
+
 For Data Parallel:
 
 <img width="325" alt="image" src="https://user-images.githubusercontent.com/46345142/168456772-5874f18e-3110-4c6c-bacb-cdefe3f7afee.png">
