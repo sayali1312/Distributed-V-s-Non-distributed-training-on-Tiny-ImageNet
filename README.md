@@ -4,6 +4,10 @@
 
 Each folder has a batch file.
 
+To run the experiment for non distributed training for example
+
+`python main.py`
+
 To run the experiment of Data Parallel (ddp) for example
 
 ` cd dataparallel `
