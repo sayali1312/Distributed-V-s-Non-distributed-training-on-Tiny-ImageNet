@@ -1,0 +1,8 @@
+epoch: 0/ total epoch: 90 best_acc: 3.11 train_acc: 1.456 %, test_acc: 3.11 % train_loss: 5.450582386493683,e test_loss: 4.932534453868866 
+epoch: 1/ total epoch: 90 best_acc: 6.39 train_acc: 5.088 %, test_acc: 6.39 % train_loss: 4.6992972731590275,e test_loss: 4.613115723133087 
+epoch: 2/ total epoch: 90 best_acc: 11.94 train_acc: 10.593 %, test_acc: 11.94 % train_loss: 4.19344650053978,e test_loss: 4.171933715343475 
+epoch: 3/ total epoch: 90 best_acc: 17.54 train_acc: 16.052 %, test_acc: 17.54 % train_loss: 3.816484545946121,e test_loss: 3.7711119484901428 
+epoch: 4/ total epoch: 90 best_acc: 19.11 train_acc: 20.288 %, test_acc: 19.11 % train_loss: 3.553850502252579,e test_loss: 3.6505240988731384 
+epoch: 5/ total epoch: 90 best_acc: 24.64 train_acc: 24.034 %, test_acc: 24.64 % train_loss: 3.321683981895447,e test_loss: 3.3085100877285005 
+epoch: 6/ total epoch: 90 best_acc: 27.69 train_acc: 28.327 %, test_acc: 27.69 % train_loss: 3.0833282964229585,e test_loss: 3.1398714530467986 
+epoch: 7/ total epoch: 90 best_acc: 30.63 train_acc: 33.085 %, test_acc: 30.63 % train_loss: 2.8299948403835296,e test_loss: 2.9863473773002625 

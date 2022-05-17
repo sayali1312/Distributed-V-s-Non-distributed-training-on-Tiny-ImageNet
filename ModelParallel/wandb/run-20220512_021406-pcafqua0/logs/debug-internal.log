@@ -1,0 +1,145 @@
+2022-05-12 02:14:07,065 INFO    MainThread:3409179 [internal.py:wandb_internal():90] W&B internal server running at pid: 3409179, started at: 2022-05-12 02:14:07.064822
+2022-05-12 02:14:07,066 INFO    WriterThread:3409179 [datastore.py:open_for_write():75] open: /scratch/mnk2978/hpml/finalproj/ModelParallel/wandb/run-20220512_021406-pcafqua0/run-pcafqua0.wandb
+2022-05-12 02:14:07,068 DEBUG   SenderThread:3409179 [sender.py:send():232] send: header
+2022-05-12 02:14:07,068 DEBUG   SenderThread:3409179 [sender.py:send():232] send: run
+2022-05-12 02:14:07,156 DEBUG   HandlerThread:3409179 [handler.py:handle_request():141] handle_request: check_version
+2022-05-12 02:14:07,274 INFO    SenderThread:3409179 [dir_watcher.py:__init__():197] watching files in: /scratch/mnk2978/hpml/finalproj/ModelParallel/wandb/run-20220512_021406-pcafqua0/files
+2022-05-12 02:14:07,274 INFO    SenderThread:3409179 [sender.py:_start_run_threads():811] run started: pcafqua0 with start time 1652336046
+2022-05-12 02:14:07,274 DEBUG   SenderThread:3409179 [sender.py:send():232] send: summary
+2022-05-12 02:14:07,275 INFO    SenderThread:3409179 [sender.py:_save_file():948] saving file wandb-summary.json with policy end
+2022-05-12 02:14:07,275 DEBUG   SenderThread:3409179 [sender.py:send_request():246] send_request: check_version
+2022-05-12 02:14:07,308 DEBUG   HandlerThread:3409179 [handler.py:handle_request():141] handle_request: run_start
+2022-05-12 02:14:07,311 DEBUG   HandlerThread:3409179 [meta.py:__init__():35] meta init
+2022-05-12 02:14:07,311 DEBUG   HandlerThread:3409179 [meta.py:__init__():49] meta init done
+2022-05-12 02:14:07,311 DEBUG   HandlerThread:3409179 [meta.py:probe():209] probe
+2022-05-12 02:14:07,317 DEBUG   HandlerThread:3409179 [git.py:repo():29] git repository is invalid
+2022-05-12 02:14:07,317 DEBUG   HandlerThread:3409179 [meta.py:_save_pip():53] save pip
+2022-05-12 02:14:07,319 DEBUG   HandlerThread:3409179 [meta.py:_save_pip():67] save pip done
+2022-05-12 02:14:07,319 DEBUG   HandlerThread:3409179 [meta.py:_save_conda():74] save conda
+2022-05-12 02:14:08,275 INFO    Thread-7  :3409179 [dir_watcher.py:_on_file_created():244] file/dir created: /scratch/mnk2978/hpml/finalproj/ModelParallel/wandb/run-20220512_021406-pcafqua0/files/requirements.txt
+2022-05-12 02:14:08,276 INFO    Thread-7  :3409179 [dir_watcher.py:_on_file_created():244] file/dir created: /scratch/mnk2978/hpml/finalproj/ModelParallel/wandb/run-20220512_021406-pcafqua0/files/wandb-summary.json
+2022-05-12 02:14:08,276 INFO    Thread-7  :3409179 [dir_watcher.py:_on_file_created():244] file/dir created: /scratch/mnk2978/hpml/finalproj/ModelParallel/wandb/run-20220512_021406-pcafqua0/files/conda-environment.yaml
+2022-05-12 02:14:10,465 DEBUG   HandlerThread:3409179 [meta.py:_save_conda():84] save conda done
+2022-05-12 02:14:10,465 DEBUG   HandlerThread:3409179 [meta.py:probe():247] probe done
+2022-05-12 02:14:10,497 DEBUG   SenderThread:3409179 [sender.py:send():232] send: files
+2022-05-12 02:14:10,497 INFO    SenderThread:3409179 [sender.py:_save_file():948] saving file wandb-metadata.json with policy now
+2022-05-12 02:14:10,501 DEBUG   HandlerThread:3409179 [handler.py:handle_request():141] handle_request: stop_status
+2022-05-12 02:14:10,501 DEBUG   SenderThread:3409179 [sender.py:send_request():246] send_request: stop_status
+2022-05-12 02:14:10,818 INFO    Thread-11 :3409179 [upload_job.py:push():132] Uploaded file /state/partition1/job-19453351/tmp6mxkpyunwandb/2wkrasz7-wandb-metadata.json
+2022-05-12 02:14:11,063 DEBUG   SenderThread:3409179 [sender.py:send():232] send: telemetry
+2022-05-12 02:14:11,063 DEBUG   SenderThread:3409179 [sender.py:send():232] send: telemetry
+2022-05-12 02:14:11,277 INFO    Thread-7  :3409179 [dir_watcher.py:_on_file_modified():257] file/dir modified: /scratch/mnk2978/hpml/finalproj/ModelParallel/wandb/run-20220512_021406-pcafqua0/files/conda-environment.yaml
+2022-05-12 02:14:11,281 INFO    Thread-7  :3409179 [dir_watcher.py:_on_file_created():244] file/dir created: /scratch/mnk2978/hpml/finalproj/ModelParallel/wandb/run-20220512_021406-pcafqua0/files/output.log
+2022-05-12 02:14:11,281 INFO    Thread-7  :3409179 [dir_watcher.py:_on_file_created():244] file/dir created: /scratch/mnk2978/hpml/finalproj/ModelParallel/wandb/run-20220512_021406-pcafqua0/files/wandb-metadata.json
+2022-05-12 02:14:12,277 INFO    Thread-7  :3409179 [dir_watcher.py:_on_file_modified():257] file/dir modified: /scratch/mnk2978/hpml/finalproj/ModelParallel/wandb/run-20220512_021406-pcafqua0/files/output.log
+2022-05-12 02:14:13,009 DEBUG   SenderThread:3409179 [sender.py:send():232] send: exit
+2022-05-12 02:14:13,009 DEBUG   HandlerThread:3409179 [handler.py:handle_request():141] handle_request: poll_exit
+2022-05-12 02:14:13,009 INFO    SenderThread:3409179 [sender.py:send_exit():368] handling exit code: 1
+2022-05-12 02:14:13,009 INFO    SenderThread:3409179 [sender.py:send_exit():370] handling runtime: 5
+2022-05-12 02:14:13,009 INFO    SenderThread:3409179 [sender.py:_save_file():948] saving file wandb-summary.json with policy end
+2022-05-12 02:14:13,010 INFO    SenderThread:3409179 [sender.py:send_exit():376] send defer
+2022-05-12 02:14:13,010 DEBUG   SenderThread:3409179 [sender.py:send_request():246] send_request: poll_exit
+2022-05-12 02:14:13,010 DEBUG   HandlerThread:3409179 [handler.py:handle_request():141] handle_request: defer
+2022-05-12 02:14:13,010 INFO    HandlerThread:3409179 [handler.py:handle_request_defer():164] handle defer: 0
+2022-05-12 02:14:13,010 DEBUG   SenderThread:3409179 [sender.py:send_request():246] send_request: defer
+2022-05-12 02:14:13,010 INFO    SenderThread:3409179 [sender.py:send_request_defer():385] handle sender defer: 0
+2022-05-12 02:14:13,010 INFO    SenderThread:3409179 [sender.py:transition_state():389] send defer: 1
+2022-05-12 02:14:13,010 DEBUG   HandlerThread:3409179 [handler.py:handle_request():141] handle_request: defer
+2022-05-12 02:14:13,010 INFO    HandlerThread:3409179 [handler.py:handle_request_defer():164] handle defer: 1
+2022-05-12 02:14:13,045 DEBUG   SenderThread:3409179 [sender.py:send_request():246] send_request: defer
+2022-05-12 02:14:13,045 INFO    SenderThread:3409179 [sender.py:send_request_defer():385] handle sender defer: 1
+2022-05-12 02:14:13,045 INFO    SenderThread:3409179 [sender.py:transition_state():389] send defer: 2
+2022-05-12 02:14:13,045 DEBUG   SenderThread:3409179 [sender.py:send():232] send: stats
+2022-05-12 02:14:13,045 DEBUG   HandlerThread:3409179 [handler.py:handle_request():141] handle_request: defer
+2022-05-12 02:14:13,046 INFO    HandlerThread:3409179 [handler.py:handle_request_defer():164] handle defer: 2
+2022-05-12 02:14:13,046 DEBUG   SenderThread:3409179 [sender.py:send_request():246] send_request: defer
+2022-05-12 02:14:13,046 INFO    SenderThread:3409179 [sender.py:send_request_defer():385] handle sender defer: 2
+2022-05-12 02:14:13,046 INFO    SenderThread:3409179 [sender.py:transition_state():389] send defer: 3
+2022-05-12 02:14:13,046 DEBUG   HandlerThread:3409179 [handler.py:handle_request():141] handle_request: defer
+2022-05-12 02:14:13,046 INFO    HandlerThread:3409179 [handler.py:handle_request_defer():164] handle defer: 3
+2022-05-12 02:14:13,046 DEBUG   SenderThread:3409179 [sender.py:send_request():246] send_request: defer
+2022-05-12 02:14:13,046 INFO    SenderThread:3409179 [sender.py:send_request_defer():385] handle sender defer: 3
+2022-05-12 02:14:13,046 INFO    SenderThread:3409179 [sender.py:transition_state():389] send defer: 4
+2022-05-12 02:14:13,046 DEBUG   HandlerThread:3409179 [handler.py:handle_request():141] handle_request: defer
+2022-05-12 02:14:13,046 INFO    HandlerThread:3409179 [handler.py:handle_request_defer():164] handle defer: 4
+2022-05-12 02:14:13,046 DEBUG   SenderThread:3409179 [sender.py:send():232] send: summary
+2022-05-12 02:14:13,047 INFO    SenderThread:3409179 [sender.py:_save_file():948] saving file wandb-summary.json with policy end
+2022-05-12 02:14:13,047 DEBUG   SenderThread:3409179 [sender.py:send_request():246] send_request: defer
+2022-05-12 02:14:13,047 INFO    SenderThread:3409179 [sender.py:send_request_defer():385] handle sender defer: 4
+2022-05-12 02:14:13,047 INFO    SenderThread:3409179 [sender.py:transition_state():389] send defer: 5
+2022-05-12 02:14:13,047 DEBUG   HandlerThread:3409179 [handler.py:handle_request():141] handle_request: defer
+2022-05-12 02:14:13,047 INFO    HandlerThread:3409179 [handler.py:handle_request_defer():164] handle defer: 5
+2022-05-12 02:14:13,047 DEBUG   SenderThread:3409179 [sender.py:send_request():246] send_request: defer
+2022-05-12 02:14:13,047 INFO    SenderThread:3409179 [sender.py:send_request_defer():385] handle sender defer: 5
+2022-05-12 02:14:13,111 DEBUG   HandlerThread:3409179 [handler.py:handle_request():141] handle_request: poll_exit
+2022-05-12 02:14:13,130 INFO    SenderThread:3409179 [sender.py:transition_state():389] send defer: 6
+2022-05-12 02:14:13,130 DEBUG   SenderThread:3409179 [sender.py:send_request():246] send_request: poll_exit
+2022-05-12 02:14:13,131 DEBUG   HandlerThread:3409179 [handler.py:handle_request():141] handle_request: defer
+2022-05-12 02:14:13,131 INFO    HandlerThread:3409179 [handler.py:handle_request_defer():164] handle defer: 6
+2022-05-12 02:14:13,131 DEBUG   SenderThread:3409179 [sender.py:send_request():246] send_request: defer
+2022-05-12 02:14:13,131 INFO    SenderThread:3409179 [sender.py:send_request_defer():385] handle sender defer: 6
+2022-05-12 02:14:13,131 INFO    SenderThread:3409179 [dir_watcher.py:finish():312] shutting down directory watcher
+2022-05-12 02:14:13,231 DEBUG   HandlerThread:3409179 [handler.py:handle_request():141] handle_request: poll_exit
+2022-05-12 02:14:13,277 INFO    Thread-7  :3409179 [dir_watcher.py:_on_file_modified():257] file/dir modified: /scratch/mnk2978/hpml/finalproj/ModelParallel/wandb/run-20220512_021406-pcafqua0/files/output.log
+2022-05-12 02:14:13,278 INFO    SenderThread:3409179 [dir_watcher.py:_on_file_modified():257] file/dir modified: /scratch/mnk2978/hpml/finalproj/ModelParallel/wandb/run-20220512_021406-pcafqua0/files/wandb-summary.json
+2022-05-12 02:14:13,278 INFO    SenderThread:3409179 [dir_watcher.py:_on_file_modified():257] file/dir modified: /scratch/mnk2978/hpml/finalproj/ModelParallel/wandb/run-20220512_021406-pcafqua0/files/config.yaml
+2022-05-12 02:14:13,278 INFO    SenderThread:3409179 [dir_watcher.py:finish():342] scan: /scratch/mnk2978/hpml/finalproj/ModelParallel/wandb/run-20220512_021406-pcafqua0/files
+2022-05-12 02:14:13,278 INFO    SenderThread:3409179 [dir_watcher.py:finish():356] scan save: /scratch/mnk2978/hpml/finalproj/ModelParallel/wandb/run-20220512_021406-pcafqua0/files/conda-environment.yaml conda-environment.yaml
+2022-05-12 02:14:13,278 INFO    SenderThread:3409179 [dir_watcher.py:finish():356] scan save: /scratch/mnk2978/hpml/finalproj/ModelParallel/wandb/run-20220512_021406-pcafqua0/files/wandb-metadata.json wandb-metadata.json
+2022-05-12 02:14:13,278 INFO    SenderThread:3409179 [dir_watcher.py:finish():356] scan save: /scratch/mnk2978/hpml/finalproj/ModelParallel/wandb/run-20220512_021406-pcafqua0/files/config.yaml config.yaml
+2022-05-12 02:14:13,280 INFO    SenderThread:3409179 [dir_watcher.py:finish():356] scan save: /scratch/mnk2978/hpml/finalproj/ModelParallel/wandb/run-20220512_021406-pcafqua0/files/requirements.txt requirements.txt
+2022-05-12 02:14:13,283 INFO    SenderThread:3409179 [dir_watcher.py:finish():356] scan save: /scratch/mnk2978/hpml/finalproj/ModelParallel/wandb/run-20220512_021406-pcafqua0/files/wandb-summary.json wandb-summary.json
+2022-05-12 02:14:13,285 INFO    SenderThread:3409179 [dir_watcher.py:finish():356] scan save: /scratch/mnk2978/hpml/finalproj/ModelParallel/wandb/run-20220512_021406-pcafqua0/files/output.log output.log
+2022-05-12 02:14:13,288 INFO    SenderThread:3409179 [sender.py:transition_state():389] send defer: 7
+2022-05-12 02:14:13,288 DEBUG   SenderThread:3409179 [sender.py:send_request():246] send_request: poll_exit
+2022-05-12 02:14:13,288 DEBUG   HandlerThread:3409179 [handler.py:handle_request():141] handle_request: defer
+2022-05-12 02:14:13,291 INFO    HandlerThread:3409179 [handler.py:handle_request_defer():164] handle defer: 7
+2022-05-12 02:14:13,291 DEBUG   SenderThread:3409179 [sender.py:send_request():246] send_request: defer
+2022-05-12 02:14:13,291 INFO    SenderThread:3409179 [sender.py:send_request_defer():385] handle sender defer: 7
+2022-05-12 02:14:13,292 INFO    SenderThread:3409179 [file_pusher.py:finish():145] shutting down file pusher
+2022-05-12 02:14:13,391 DEBUG   HandlerThread:3409179 [handler.py:handle_request():141] handle_request: poll_exit
+2022-05-12 02:14:13,391 DEBUG   SenderThread:3409179 [sender.py:send_request():246] send_request: poll_exit
+2022-05-12 02:14:13,495 DEBUG   HandlerThread:3409179 [handler.py:handle_request():141] handle_request: poll_exit
+2022-05-12 02:14:13,496 DEBUG   SenderThread:3409179 [sender.py:send_request():246] send_request: poll_exit
+2022-05-12 02:14:13,596 DEBUG   HandlerThread:3409179 [handler.py:handle_request():141] handle_request: poll_exit
+2022-05-12 02:14:13,596 DEBUG   SenderThread:3409179 [sender.py:send_request():246] send_request: poll_exit
+2022-05-12 02:14:13,611 INFO    Thread-14 :3409179 [upload_job.py:push():132] Uploaded file /scratch/mnk2978/hpml/finalproj/ModelParallel/wandb/run-20220512_021406-pcafqua0/files/requirements.txt
+2022-05-12 02:14:13,660 INFO    Thread-16 :3409179 [upload_job.py:push():132] Uploaded file /scratch/mnk2978/hpml/finalproj/ModelParallel/wandb/run-20220512_021406-pcafqua0/files/output.log
+2022-05-12 02:14:13,666 INFO    Thread-13 :3409179 [upload_job.py:push():132] Uploaded file /scratch/mnk2978/hpml/finalproj/ModelParallel/wandb/run-20220512_021406-pcafqua0/files/config.yaml
+2022-05-12 02:14:13,679 INFO    Thread-12 :3409179 [upload_job.py:push():132] Uploaded file /scratch/mnk2978/hpml/finalproj/ModelParallel/wandb/run-20220512_021406-pcafqua0/files/conda-environment.yaml
+2022-05-12 02:14:13,689 INFO    Thread-15 :3409179 [upload_job.py:push():132] Uploaded file /scratch/mnk2978/hpml/finalproj/ModelParallel/wandb/run-20220512_021406-pcafqua0/files/wandb-summary.json
+2022-05-12 02:14:13,697 DEBUG   HandlerThread:3409179 [handler.py:handle_request():141] handle_request: poll_exit
+2022-05-12 02:14:13,697 DEBUG   SenderThread:3409179 [sender.py:send_request():246] send_request: poll_exit
+2022-05-12 02:14:13,798 DEBUG   HandlerThread:3409179 [handler.py:handle_request():141] handle_request: poll_exit
+2022-05-12 02:14:13,798 DEBUG   SenderThread:3409179 [sender.py:send_request():246] send_request: poll_exit
+2022-05-12 02:14:13,889 INFO    Thread-6  :3409179 [sender.py:transition_state():389] send defer: 8
+2022-05-12 02:14:13,890 DEBUG   HandlerThread:3409179 [handler.py:handle_request():141] handle_request: defer
+2022-05-12 02:14:13,890 INFO    HandlerThread:3409179 [handler.py:handle_request_defer():164] handle defer: 8
+2022-05-12 02:14:13,890 DEBUG   SenderThread:3409179 [sender.py:send_request():246] send_request: defer
+2022-05-12 02:14:13,890 INFO    SenderThread:3409179 [sender.py:send_request_defer():385] handle sender defer: 8
+2022-05-12 02:14:13,898 DEBUG   HandlerThread:3409179 [handler.py:handle_request():141] handle_request: poll_exit
+2022-05-12 02:14:14,084 INFO    SenderThread:3409179 [sender.py:transition_state():389] send defer: 9
+2022-05-12 02:14:14,084 DEBUG   SenderThread:3409179 [sender.py:send_request():246] send_request: poll_exit
+2022-05-12 02:14:14,084 DEBUG   HandlerThread:3409179 [handler.py:handle_request():141] handle_request: defer
+2022-05-12 02:14:14,084 INFO    HandlerThread:3409179 [handler.py:handle_request_defer():164] handle defer: 9
+2022-05-12 02:14:14,084 DEBUG   SenderThread:3409179 [sender.py:send_request():246] send_request: defer
+2022-05-12 02:14:14,084 INFO    SenderThread:3409179 [sender.py:send_request_defer():385] handle sender defer: 9
+2022-05-12 02:14:14,084 INFO    SenderThread:3409179 [sender.py:transition_state():389] send defer: 10
+2022-05-12 02:14:14,085 DEBUG   SenderThread:3409179 [sender.py:send():232] send: final
+2022-05-12 02:14:14,085 DEBUG   SenderThread:3409179 [sender.py:send():232] send: footer
+2022-05-12 02:14:14,085 DEBUG   HandlerThread:3409179 [handler.py:handle_request():141] handle_request: defer
+2022-05-12 02:14:14,085 INFO    HandlerThread:3409179 [handler.py:handle_request_defer():164] handle defer: 10
+2022-05-12 02:14:14,085 DEBUG   SenderThread:3409179 [sender.py:send_request():246] send_request: defer
+2022-05-12 02:14:14,085 INFO    SenderThread:3409179 [sender.py:send_request_defer():385] handle sender defer: 10
+2022-05-12 02:14:14,185 DEBUG   HandlerThread:3409179 [handler.py:handle_request():141] handle_request: poll_exit
+2022-05-12 02:14:14,185 DEBUG   SenderThread:3409179 [sender.py:send_request():246] send_request: poll_exit
+2022-05-12 02:14:14,185 INFO    SenderThread:3409179 [file_pusher.py:join():150] waiting for file pusher
+2022-05-12 02:14:14,388 DEBUG   HandlerThread:3409179 [handler.py:handle_request():141] handle_request: sampled_history
+2022-05-12 02:14:14,388 DEBUG   HandlerThread:3409179 [handler.py:handle_request():141] handle_request: get_summary
+2022-05-12 02:14:14,389 DEBUG   HandlerThread:3409179 [handler.py:handle_request():141] handle_request: shutdown
+2022-05-12 02:14:14,389 INFO    HandlerThread:3409179 [handler.py:finish():806] shutting down handler
+2022-05-12 02:14:15,085 INFO    WriterThread:3409179 [datastore.py:close():279] close: /scratch/mnk2978/hpml/finalproj/ModelParallel/wandb/run-20220512_021406-pcafqua0/run-pcafqua0.wandb
+2022-05-12 02:14:15,288 INFO    SenderThread:3409179 [sender.py:finish():1110] shutting down sender
+2022-05-12 02:14:15,288 INFO    SenderThread:3409179 [file_pusher.py:finish():145] shutting down file pusher
+2022-05-12 02:14:15,288 INFO    SenderThread:3409179 [file_pusher.py:join():150] waiting for file pusher
+2022-05-12 02:14:15,289 INFO    MainThread:3409179 [internal.py:handle_exit():80] Internal process exited

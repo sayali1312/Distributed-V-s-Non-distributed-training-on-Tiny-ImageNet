@@ -1,0 +1,400 @@
+2022-05-12 02:35:30,342 INFO    MainThread:3412444 [internal.py:wandb_internal():90] W&B internal server running at pid: 3412444, started at: 2022-05-12 02:35:30.342446
+2022-05-12 02:35:30,344 INFO    WriterThread:3412444 [datastore.py:open_for_write():75] open: /scratch/mnk2978/hpml/finalproj/ModelParallel/wandb/run-20220512_023529-3ur3gwvy/run-3ur3gwvy.wandb
+2022-05-12 02:35:30,345 DEBUG   SenderThread:3412444 [sender.py:send():232] send: header
+2022-05-12 02:35:30,345 DEBUG   SenderThread:3412444 [sender.py:send():232] send: run
+2022-05-12 02:35:30,432 DEBUG   HandlerThread:3412444 [handler.py:handle_request():141] handle_request: check_version
+2022-05-12 02:35:30,436 INFO    SenderThread:3412444 [dir_watcher.py:__init__():197] watching files in: /scratch/mnk2978/hpml/finalproj/ModelParallel/wandb/run-20220512_023529-3ur3gwvy/files
+2022-05-12 02:35:30,436 INFO    SenderThread:3412444 [sender.py:_start_run_threads():811] run started: 3ur3gwvy with start time 1652337329
+2022-05-12 02:35:30,436 DEBUG   SenderThread:3412444 [sender.py:send():232] send: summary
+2022-05-12 02:35:30,437 INFO    SenderThread:3412444 [sender.py:_save_file():948] saving file wandb-summary.json with policy end
+2022-05-12 02:35:30,437 DEBUG   SenderThread:3412444 [sender.py:send_request():246] send_request: check_version
+2022-05-12 02:35:30,465 DEBUG   HandlerThread:3412444 [handler.py:handle_request():141] handle_request: run_start
+2022-05-12 02:35:30,468 DEBUG   HandlerThread:3412444 [meta.py:__init__():35] meta init
+2022-05-12 02:35:30,468 DEBUG   HandlerThread:3412444 [meta.py:__init__():49] meta init done
+2022-05-12 02:35:30,469 DEBUG   HandlerThread:3412444 [meta.py:probe():209] probe
+2022-05-12 02:35:30,475 DEBUG   HandlerThread:3412444 [git.py:repo():29] git repository is invalid
+2022-05-12 02:35:30,475 DEBUG   HandlerThread:3412444 [meta.py:_save_pip():53] save pip
+2022-05-12 02:35:30,475 DEBUG   HandlerThread:3412444 [meta.py:_save_pip():67] save pip done
+2022-05-12 02:35:30,476 DEBUG   HandlerThread:3412444 [meta.py:_save_conda():74] save conda
+2022-05-12 02:35:31,437 INFO    Thread-7  :3412444 [dir_watcher.py:_on_file_created():244] file/dir created: /scratch/mnk2978/hpml/finalproj/ModelParallel/wandb/run-20220512_023529-3ur3gwvy/files/requirements.txt
+2022-05-12 02:35:31,438 INFO    Thread-7  :3412444 [dir_watcher.py:_on_file_created():244] file/dir created: /scratch/mnk2978/hpml/finalproj/ModelParallel/wandb/run-20220512_023529-3ur3gwvy/files/wandb-summary.json
+2022-05-12 02:35:31,438 INFO    Thread-7  :3412444 [dir_watcher.py:_on_file_created():244] file/dir created: /scratch/mnk2978/hpml/finalproj/ModelParallel/wandb/run-20220512_023529-3ur3gwvy/files/conda-environment.yaml
+2022-05-12 02:35:33,265 DEBUG   HandlerThread:3412444 [meta.py:_save_conda():84] save conda done
+2022-05-12 02:35:33,265 DEBUG   HandlerThread:3412444 [meta.py:probe():247] probe done
+2022-05-12 02:35:33,268 DEBUG   SenderThread:3412444 [sender.py:send():232] send: files
+2022-05-12 02:35:33,269 INFO    SenderThread:3412444 [sender.py:_save_file():948] saving file wandb-metadata.json with policy now
+2022-05-12 02:35:33,272 DEBUG   HandlerThread:3412444 [handler.py:handle_request():141] handle_request: stop_status
+2022-05-12 02:35:33,273 DEBUG   SenderThread:3412444 [sender.py:send_request():246] send_request: stop_status
+2022-05-12 02:35:33,330 DEBUG   SenderThread:3412444 [sender.py:send():232] send: telemetry
+2022-05-12 02:35:33,439 INFO    Thread-7  :3412444 [dir_watcher.py:_on_file_modified():257] file/dir modified: /scratch/mnk2978/hpml/finalproj/ModelParallel/wandb/run-20220512_023529-3ur3gwvy/files/conda-environment.yaml
+2022-05-12 02:35:33,439 INFO    Thread-7  :3412444 [dir_watcher.py:_on_file_created():244] file/dir created: /scratch/mnk2978/hpml/finalproj/ModelParallel/wandb/run-20220512_023529-3ur3gwvy/files/output.log
+2022-05-12 02:35:33,439 INFO    Thread-7  :3412444 [dir_watcher.py:_on_file_created():244] file/dir created: /scratch/mnk2978/hpml/finalproj/ModelParallel/wandb/run-20220512_023529-3ur3gwvy/files/wandb-metadata.json
+2022-05-12 02:35:33,621 INFO    Thread-11 :3412444 [upload_job.py:push():132] Uploaded file /state/partition1/job-19453550/tmppfs02ttkwandb/20bf5tc1-wandb-metadata.json
+2022-05-12 02:35:35,439 INFO    Thread-7  :3412444 [dir_watcher.py:_on_file_modified():257] file/dir modified: /scratch/mnk2978/hpml/finalproj/ModelParallel/wandb/run-20220512_023529-3ur3gwvy/files/output.log
+2022-05-12 02:35:41,145 DEBUG   SenderThread:3412444 [sender.py:send():232] send: telemetry
+2022-05-12 02:35:41,441 INFO    Thread-7  :3412444 [dir_watcher.py:_on_file_modified():257] file/dir modified: /scratch/mnk2978/hpml/finalproj/ModelParallel/wandb/run-20220512_023529-3ur3gwvy/files/output.log
+2022-05-12 02:35:43,442 INFO    Thread-7  :3412444 [dir_watcher.py:_on_file_modified():257] file/dir modified: /scratch/mnk2978/hpml/finalproj/ModelParallel/wandb/run-20220512_023529-3ur3gwvy/files/output.log
+2022-05-12 02:35:45,442 INFO    Thread-7  :3412444 [dir_watcher.py:_on_file_modified():257] file/dir modified: /scratch/mnk2978/hpml/finalproj/ModelParallel/wandb/run-20220512_023529-3ur3gwvy/files/output.log
+2022-05-12 02:35:47,443 INFO    Thread-7  :3412444 [dir_watcher.py:_on_file_modified():257] file/dir modified: /scratch/mnk2978/hpml/finalproj/ModelParallel/wandb/run-20220512_023529-3ur3gwvy/files/output.log
+2022-05-12 02:35:48,331 DEBUG   HandlerThread:3412444 [handler.py:handle_request():141] handle_request: stop_status
+2022-05-12 02:35:48,331 DEBUG   SenderThread:3412444 [sender.py:send_request():246] send_request: stop_status
+2022-05-12 02:35:50,444 INFO    Thread-7  :3412444 [dir_watcher.py:_on_file_modified():257] file/dir modified: /scratch/mnk2978/hpml/finalproj/ModelParallel/wandb/run-20220512_023529-3ur3gwvy/files/output.log
+2022-05-12 02:35:52,444 INFO    Thread-7  :3412444 [dir_watcher.py:_on_file_modified():257] file/dir modified: /scratch/mnk2978/hpml/finalproj/ModelParallel/wandb/run-20220512_023529-3ur3gwvy/files/output.log
+2022-05-12 02:35:54,445 INFO    Thread-7  :3412444 [dir_watcher.py:_on_file_modified():257] file/dir modified: /scratch/mnk2978/hpml/finalproj/ModelParallel/wandb/run-20220512_023529-3ur3gwvy/files/output.log
+2022-05-12 02:35:56,446 INFO    Thread-7  :3412444 [dir_watcher.py:_on_file_modified():257] file/dir modified: /scratch/mnk2978/hpml/finalproj/ModelParallel/wandb/run-20220512_023529-3ur3gwvy/files/output.log
+2022-05-12 02:35:58,446 INFO    Thread-7  :3412444 [dir_watcher.py:_on_file_modified():257] file/dir modified: /scratch/mnk2978/hpml/finalproj/ModelParallel/wandb/run-20220512_023529-3ur3gwvy/files/output.log
+2022-05-12 02:35:58,985 DEBUG   SenderThread:3412444 [sender.py:send():232] send: stats
+2022-05-12 02:36:00,447 INFO    Thread-7  :3412444 [dir_watcher.py:_on_file_modified():257] file/dir modified: /scratch/mnk2978/hpml/finalproj/ModelParallel/wandb/run-20220512_023529-3ur3gwvy/files/output.log
+2022-05-12 02:36:01,447 INFO    Thread-7  :3412444 [dir_watcher.py:_on_file_modified():257] file/dir modified: /scratch/mnk2978/hpml/finalproj/ModelParallel/wandb/run-20220512_023529-3ur3gwvy/files/config.yaml
+2022-05-12 02:36:02,447 INFO    Thread-7  :3412444 [dir_watcher.py:_on_file_modified():257] file/dir modified: /scratch/mnk2978/hpml/finalproj/ModelParallel/wandb/run-20220512_023529-3ur3gwvy/files/output.log
+2022-05-12 02:36:03,390 DEBUG   HandlerThread:3412444 [handler.py:handle_request():141] handle_request: stop_status
+2022-05-12 02:36:03,390 DEBUG   SenderThread:3412444 [sender.py:send_request():246] send_request: stop_status
+2022-05-12 02:36:04,448 INFO    Thread-7  :3412444 [dir_watcher.py:_on_file_modified():257] file/dir modified: /scratch/mnk2978/hpml/finalproj/ModelParallel/wandb/run-20220512_023529-3ur3gwvy/files/output.log
+2022-05-12 02:36:06,449 INFO    Thread-7  :3412444 [dir_watcher.py:_on_file_modified():257] file/dir modified: /scratch/mnk2978/hpml/finalproj/ModelParallel/wandb/run-20220512_023529-3ur3gwvy/files/output.log
+2022-05-12 02:36:08,449 INFO    Thread-7  :3412444 [dir_watcher.py:_on_file_modified():257] file/dir modified: /scratch/mnk2978/hpml/finalproj/ModelParallel/wandb/run-20220512_023529-3ur3gwvy/files/output.log
+2022-05-12 02:36:10,450 INFO    Thread-7  :3412444 [dir_watcher.py:_on_file_modified():257] file/dir modified: /scratch/mnk2978/hpml/finalproj/ModelParallel/wandb/run-20220512_023529-3ur3gwvy/files/output.log
+2022-05-12 02:36:12,451 INFO    Thread-7  :3412444 [dir_watcher.py:_on_file_modified():257] file/dir modified: /scratch/mnk2978/hpml/finalproj/ModelParallel/wandb/run-20220512_023529-3ur3gwvy/files/output.log
+2022-05-12 02:36:14,451 INFO    Thread-7  :3412444 [dir_watcher.py:_on_file_modified():257] file/dir modified: /scratch/mnk2978/hpml/finalproj/ModelParallel/wandb/run-20220512_023529-3ur3gwvy/files/output.log
+2022-05-12 02:36:16,452 INFO    Thread-7  :3412444 [dir_watcher.py:_on_file_modified():257] file/dir modified: /scratch/mnk2978/hpml/finalproj/ModelParallel/wandb/run-20220512_023529-3ur3gwvy/files/output.log
+2022-05-12 02:36:18,447 DEBUG   HandlerThread:3412444 [handler.py:handle_request():141] handle_request: stop_status
+2022-05-12 02:36:18,447 DEBUG   SenderThread:3412444 [sender.py:send_request():246] send_request: stop_status
+2022-05-12 02:36:18,452 INFO    Thread-7  :3412444 [dir_watcher.py:_on_file_modified():257] file/dir modified: /scratch/mnk2978/hpml/finalproj/ModelParallel/wandb/run-20220512_023529-3ur3gwvy/files/output.log
+2022-05-12 02:36:20,453 INFO    Thread-7  :3412444 [dir_watcher.py:_on_file_modified():257] file/dir modified: /scratch/mnk2978/hpml/finalproj/ModelParallel/wandb/run-20220512_023529-3ur3gwvy/files/output.log
+2022-05-12 02:36:22,454 INFO    Thread-7  :3412444 [dir_watcher.py:_on_file_modified():257] file/dir modified: /scratch/mnk2978/hpml/finalproj/ModelParallel/wandb/run-20220512_023529-3ur3gwvy/files/output.log
+2022-05-12 02:36:24,454 INFO    Thread-7  :3412444 [dir_watcher.py:_on_file_modified():257] file/dir modified: /scratch/mnk2978/hpml/finalproj/ModelParallel/wandb/run-20220512_023529-3ur3gwvy/files/output.log
+2022-05-12 02:36:26,455 INFO    Thread-7  :3412444 [dir_watcher.py:_on_file_modified():257] file/dir modified: /scratch/mnk2978/hpml/finalproj/ModelParallel/wandb/run-20220512_023529-3ur3gwvy/files/output.log
+2022-05-12 02:36:28,455 INFO    Thread-7  :3412444 [dir_watcher.py:_on_file_modified():257] file/dir modified: /scratch/mnk2978/hpml/finalproj/ModelParallel/wandb/run-20220512_023529-3ur3gwvy/files/output.log
+2022-05-12 02:36:29,506 DEBUG   SenderThread:3412444 [sender.py:send():232] send: stats
+2022-05-12 02:36:30,456 INFO    Thread-7  :3412444 [dir_watcher.py:_on_file_modified():257] file/dir modified: /scratch/mnk2978/hpml/finalproj/ModelParallel/wandb/run-20220512_023529-3ur3gwvy/files/output.log
+2022-05-12 02:36:32,457 INFO    Thread-7  :3412444 [dir_watcher.py:_on_file_modified():257] file/dir modified: /scratch/mnk2978/hpml/finalproj/ModelParallel/wandb/run-20220512_023529-3ur3gwvy/files/output.log
+2022-05-12 02:36:33,502 DEBUG   HandlerThread:3412444 [handler.py:handle_request():141] handle_request: stop_status
+2022-05-12 02:36:33,502 DEBUG   SenderThread:3412444 [sender.py:send_request():246] send_request: stop_status
+2022-05-12 02:36:34,457 INFO    Thread-7  :3412444 [dir_watcher.py:_on_file_modified():257] file/dir modified: /scratch/mnk2978/hpml/finalproj/ModelParallel/wandb/run-20220512_023529-3ur3gwvy/files/output.log
+2022-05-12 02:36:36,458 INFO    Thread-7  :3412444 [dir_watcher.py:_on_file_modified():257] file/dir modified: /scratch/mnk2978/hpml/finalproj/ModelParallel/wandb/run-20220512_023529-3ur3gwvy/files/output.log
+2022-05-12 02:36:38,459 INFO    Thread-7  :3412444 [dir_watcher.py:_on_file_modified():257] file/dir modified: /scratch/mnk2978/hpml/finalproj/ModelParallel/wandb/run-20220512_023529-3ur3gwvy/files/output.log
+2022-05-12 02:36:40,459 INFO    Thread-7  :3412444 [dir_watcher.py:_on_file_modified():257] file/dir modified: /scratch/mnk2978/hpml/finalproj/ModelParallel/wandb/run-20220512_023529-3ur3gwvy/files/output.log
+2022-05-12 02:36:42,460 INFO    Thread-7  :3412444 [dir_watcher.py:_on_file_modified():257] file/dir modified: /scratch/mnk2978/hpml/finalproj/ModelParallel/wandb/run-20220512_023529-3ur3gwvy/files/output.log
+2022-05-12 02:36:44,461 INFO    Thread-7  :3412444 [dir_watcher.py:_on_file_modified():257] file/dir modified: /scratch/mnk2978/hpml/finalproj/ModelParallel/wandb/run-20220512_023529-3ur3gwvy/files/output.log
+2022-05-12 02:36:46,461 INFO    Thread-7  :3412444 [dir_watcher.py:_on_file_modified():257] file/dir modified: /scratch/mnk2978/hpml/finalproj/ModelParallel/wandb/run-20220512_023529-3ur3gwvy/files/output.log
+2022-05-12 02:36:48,462 INFO    Thread-7  :3412444 [dir_watcher.py:_on_file_modified():257] file/dir modified: /scratch/mnk2978/hpml/finalproj/ModelParallel/wandb/run-20220512_023529-3ur3gwvy/files/output.log
+2022-05-12 02:36:48,558 DEBUG   HandlerThread:3412444 [handler.py:handle_request():141] handle_request: stop_status
+2022-05-12 02:36:48,558 DEBUG   SenderThread:3412444 [sender.py:send_request():246] send_request: stop_status
+2022-05-12 02:36:50,462 INFO    Thread-7  :3412444 [dir_watcher.py:_on_file_modified():257] file/dir modified: /scratch/mnk2978/hpml/finalproj/ModelParallel/wandb/run-20220512_023529-3ur3gwvy/files/output.log
+2022-05-12 02:36:52,463 INFO    Thread-7  :3412444 [dir_watcher.py:_on_file_modified():257] file/dir modified: /scratch/mnk2978/hpml/finalproj/ModelParallel/wandb/run-20220512_023529-3ur3gwvy/files/output.log
+2022-05-12 02:36:54,464 INFO    Thread-7  :3412444 [dir_watcher.py:_on_file_modified():257] file/dir modified: /scratch/mnk2978/hpml/finalproj/ModelParallel/wandb/run-20220512_023529-3ur3gwvy/files/output.log
+2022-05-12 02:36:56,464 INFO    Thread-7  :3412444 [dir_watcher.py:_on_file_modified():257] file/dir modified: /scratch/mnk2978/hpml/finalproj/ModelParallel/wandb/run-20220512_023529-3ur3gwvy/files/output.log
+2022-05-12 02:36:58,465 INFO    Thread-7  :3412444 [dir_watcher.py:_on_file_modified():257] file/dir modified: /scratch/mnk2978/hpml/finalproj/ModelParallel/wandb/run-20220512_023529-3ur3gwvy/files/output.log
+2022-05-12 02:37:00,012 DEBUG   SenderThread:3412444 [sender.py:send():232] send: stats
+2022-05-12 02:37:00,465 INFO    Thread-7  :3412444 [dir_watcher.py:_on_file_modified():257] file/dir modified: /scratch/mnk2978/hpml/finalproj/ModelParallel/wandb/run-20220512_023529-3ur3gwvy/files/output.log
+2022-05-12 02:37:02,466 INFO    Thread-7  :3412444 [dir_watcher.py:_on_file_modified():257] file/dir modified: /scratch/mnk2978/hpml/finalproj/ModelParallel/wandb/run-20220512_023529-3ur3gwvy/files/output.log
+2022-05-12 02:37:03,614 DEBUG   HandlerThread:3412444 [handler.py:handle_request():141] handle_request: stop_status
+2022-05-12 02:37:03,615 DEBUG   SenderThread:3412444 [sender.py:send_request():246] send_request: stop_status
+2022-05-12 02:37:04,467 INFO    Thread-7  :3412444 [dir_watcher.py:_on_file_modified():257] file/dir modified: /scratch/mnk2978/hpml/finalproj/ModelParallel/wandb/run-20220512_023529-3ur3gwvy/files/output.log
+2022-05-12 02:37:06,467 INFO    Thread-7  :3412444 [dir_watcher.py:_on_file_modified():257] file/dir modified: /scratch/mnk2978/hpml/finalproj/ModelParallel/wandb/run-20220512_023529-3ur3gwvy/files/output.log
+2022-05-12 02:37:08,468 INFO    Thread-7  :3412444 [dir_watcher.py:_on_file_modified():257] file/dir modified: /scratch/mnk2978/hpml/finalproj/ModelParallel/wandb/run-20220512_023529-3ur3gwvy/files/output.log
+2022-05-12 02:37:10,469 INFO    Thread-7  :3412444 [dir_watcher.py:_on_file_modified():257] file/dir modified: /scratch/mnk2978/hpml/finalproj/ModelParallel/wandb/run-20220512_023529-3ur3gwvy/files/output.log
+2022-05-12 02:37:12,469 INFO    Thread-7  :3412444 [dir_watcher.py:_on_file_modified():257] file/dir modified: /scratch/mnk2978/hpml/finalproj/ModelParallel/wandb/run-20220512_023529-3ur3gwvy/files/output.log
+2022-05-12 02:37:14,470 INFO    Thread-7  :3412444 [dir_watcher.py:_on_file_modified():257] file/dir modified: /scratch/mnk2978/hpml/finalproj/ModelParallel/wandb/run-20220512_023529-3ur3gwvy/files/output.log
+2022-05-12 02:37:16,470 INFO    Thread-7  :3412444 [dir_watcher.py:_on_file_modified():257] file/dir modified: /scratch/mnk2978/hpml/finalproj/ModelParallel/wandb/run-20220512_023529-3ur3gwvy/files/output.log
+2022-05-12 02:37:18,471 INFO    Thread-7  :3412444 [dir_watcher.py:_on_file_modified():257] file/dir modified: /scratch/mnk2978/hpml/finalproj/ModelParallel/wandb/run-20220512_023529-3ur3gwvy/files/output.log
+2022-05-12 02:37:18,673 DEBUG   HandlerThread:3412444 [handler.py:handle_request():141] handle_request: stop_status
+2022-05-12 02:37:18,673 DEBUG   SenderThread:3412444 [sender.py:send_request():246] send_request: stop_status
+2022-05-12 02:37:20,472 INFO    Thread-7  :3412444 [dir_watcher.py:_on_file_modified():257] file/dir modified: /scratch/mnk2978/hpml/finalproj/ModelParallel/wandb/run-20220512_023529-3ur3gwvy/files/output.log
+2022-05-12 02:37:22,472 INFO    Thread-7  :3412444 [dir_watcher.py:_on_file_modified():257] file/dir modified: /scratch/mnk2978/hpml/finalproj/ModelParallel/wandb/run-20220512_023529-3ur3gwvy/files/output.log
+2022-05-12 02:37:24,473 INFO    Thread-7  :3412444 [dir_watcher.py:_on_file_modified():257] file/dir modified: /scratch/mnk2978/hpml/finalproj/ModelParallel/wandb/run-20220512_023529-3ur3gwvy/files/output.log
+2022-05-12 02:37:26,473 INFO    Thread-7  :3412444 [dir_watcher.py:_on_file_modified():257] file/dir modified: /scratch/mnk2978/hpml/finalproj/ModelParallel/wandb/run-20220512_023529-3ur3gwvy/files/output.log
+2022-05-12 02:37:28,474 INFO    Thread-7  :3412444 [dir_watcher.py:_on_file_modified():257] file/dir modified: /scratch/mnk2978/hpml/finalproj/ModelParallel/wandb/run-20220512_023529-3ur3gwvy/files/output.log
+2022-05-12 02:37:30,475 INFO    Thread-7  :3412444 [dir_watcher.py:_on_file_modified():257] file/dir modified: /scratch/mnk2978/hpml/finalproj/ModelParallel/wandb/run-20220512_023529-3ur3gwvy/files/output.log
+2022-05-12 02:37:30,522 DEBUG   SenderThread:3412444 [sender.py:send():232] send: stats
+2022-05-12 02:37:32,475 INFO    Thread-7  :3412444 [dir_watcher.py:_on_file_modified():257] file/dir modified: /scratch/mnk2978/hpml/finalproj/ModelParallel/wandb/run-20220512_023529-3ur3gwvy/files/output.log
+2022-05-12 02:37:33,729 DEBUG   HandlerThread:3412444 [handler.py:handle_request():141] handle_request: stop_status
+2022-05-12 02:37:33,730 DEBUG   SenderThread:3412444 [sender.py:send_request():246] send_request: stop_status
+2022-05-12 02:37:34,476 INFO    Thread-7  :3412444 [dir_watcher.py:_on_file_modified():257] file/dir modified: /scratch/mnk2978/hpml/finalproj/ModelParallel/wandb/run-20220512_023529-3ur3gwvy/files/output.log
+2022-05-12 02:37:36,477 INFO    Thread-7  :3412444 [dir_watcher.py:_on_file_modified():257] file/dir modified: /scratch/mnk2978/hpml/finalproj/ModelParallel/wandb/run-20220512_023529-3ur3gwvy/files/output.log
+2022-05-12 02:37:38,477 INFO    Thread-7  :3412444 [dir_watcher.py:_on_file_modified():257] file/dir modified: /scratch/mnk2978/hpml/finalproj/ModelParallel/wandb/run-20220512_023529-3ur3gwvy/files/output.log
+2022-05-12 02:37:40,478 INFO    Thread-7  :3412444 [dir_watcher.py:_on_file_modified():257] file/dir modified: /scratch/mnk2978/hpml/finalproj/ModelParallel/wandb/run-20220512_023529-3ur3gwvy/files/output.log
+2022-05-12 02:37:42,478 INFO    Thread-7  :3412444 [dir_watcher.py:_on_file_modified():257] file/dir modified: /scratch/mnk2978/hpml/finalproj/ModelParallel/wandb/run-20220512_023529-3ur3gwvy/files/output.log
+2022-05-12 02:37:42,506 DEBUG   HandlerThread:3412444 [handler.py:handle_request():141] handle_request: partial_history
+2022-05-12 02:37:42,507 DEBUG   HandlerThread:3412444 [handler.py:handle_request():141] handle_request: partial_history
+2022-05-12 02:37:42,507 DEBUG   HandlerThread:3412444 [handler.py:handle_request():141] handle_request: partial_history
+2022-05-12 02:37:42,508 DEBUG   HandlerThread:3412444 [handler.py:handle_request():141] handle_request: partial_history
+2022-05-12 02:37:42,510 DEBUG   HandlerThread:3412444 [handler.py:handle_request():141] handle_request: partial_history
+2022-05-12 02:37:42,510 DEBUG   HandlerThread:3412444 [handler.py:handle_request():141] handle_request: partial_history
+2022-05-12 02:37:42,511 DEBUG   HandlerThread:3412444 [handler.py:handle_request():141] handle_request: partial_history
+2022-05-12 02:37:42,513 DEBUG   HandlerThread:3412444 [handler.py:handle_request():141] handle_request: partial_history
+2022-05-12 02:37:42,513 DEBUG   HandlerThread:3412444 [handler.py:handle_request():141] handle_request: partial_history
+2022-05-12 02:37:42,514 DEBUG   HandlerThread:3412444 [handler.py:handle_request():141] handle_request: partial_history
+2022-05-12 02:37:42,515 DEBUG   HandlerThread:3412444 [handler.py:handle_request():141] handle_request: partial_history
+2022-05-12 02:37:42,516 DEBUG   HandlerThread:3412444 [handler.py:handle_request():141] handle_request: partial_history
+2022-05-12 02:37:42,516 DEBUG   HandlerThread:3412444 [handler.py:handle_request():141] handle_request: partial_history
+2022-05-12 02:37:42,518 DEBUG   HandlerThread:3412444 [handler.py:handle_request():141] handle_request: partial_history
+2022-05-12 02:37:42,519 DEBUG   HandlerThread:3412444 [handler.py:handle_request():141] handle_request: partial_history
+2022-05-12 02:37:42,519 DEBUG   HandlerThread:3412444 [handler.py:handle_request():141] handle_request: partial_history
+2022-05-12 02:37:42,521 DEBUG   HandlerThread:3412444 [handler.py:handle_request():141] handle_request: partial_history
+2022-05-12 02:37:42,522 DEBUG   HandlerThread:3412444 [handler.py:handle_request():141] handle_request: partial_history
+2022-05-12 02:37:42,522 DEBUG   HandlerThread:3412444 [handler.py:handle_request():141] handle_request: partial_history
+2022-05-12 02:37:42,524 DEBUG   HandlerThread:3412444 [handler.py:handle_request():141] handle_request: partial_history
+2022-05-12 02:37:42,524 DEBUG   HandlerThread:3412444 [handler.py:handle_request():141] handle_request: partial_history
+2022-05-12 02:37:42,525 DEBUG   HandlerThread:3412444 [handler.py:handle_request():141] handle_request: partial_history
+2022-05-12 02:37:42,529 DEBUG   HandlerThread:3412444 [handler.py:handle_request():141] handle_request: partial_history
+2022-05-12 02:37:42,530 DEBUG   HandlerThread:3412444 [handler.py:handle_request():141] handle_request: partial_history
+2022-05-12 02:37:42,530 DEBUG   HandlerThread:3412444 [handler.py:handle_request():141] handle_request: partial_history
+2022-05-12 02:37:42,532 DEBUG   HandlerThread:3412444 [handler.py:handle_request():141] handle_request: partial_history
+2022-05-12 02:37:42,532 DEBUG   HandlerThread:3412444 [handler.py:handle_request():141] handle_request: partial_history
+2022-05-12 02:37:42,533 DEBUG   HandlerThread:3412444 [handler.py:handle_request():141] handle_request: partial_history
+2022-05-12 02:37:42,537 DEBUG   HandlerThread:3412444 [handler.py:handle_request():141] handle_request: partial_history
+2022-05-12 02:37:42,537 DEBUG   HandlerThread:3412444 [handler.py:handle_request():141] handle_request: partial_history
+2022-05-12 02:37:42,538 DEBUG   HandlerThread:3412444 [handler.py:handle_request():141] handle_request: partial_history
+2022-05-12 02:37:42,540 DEBUG   HandlerThread:3412444 [handler.py:handle_request():141] handle_request: partial_history
+2022-05-12 02:37:42,540 DEBUG   HandlerThread:3412444 [handler.py:handle_request():141] handle_request: partial_history
+2022-05-12 02:37:42,541 DEBUG   HandlerThread:3412444 [handler.py:handle_request():141] handle_request: partial_history
+2022-05-12 02:37:42,542 DEBUG   HandlerThread:3412444 [handler.py:handle_request():141] handle_request: partial_history
+2022-05-12 02:37:42,542 DEBUG   HandlerThread:3412444 [handler.py:handle_request():141] handle_request: partial_history
+2022-05-12 02:37:42,543 DEBUG   HandlerThread:3412444 [handler.py:handle_request():141] handle_request: partial_history
+2022-05-12 02:37:42,544 DEBUG   HandlerThread:3412444 [handler.py:handle_request():141] handle_request: partial_history
+2022-05-12 02:37:42,545 DEBUG   HandlerThread:3412444 [handler.py:handle_request():141] handle_request: partial_history
+2022-05-12 02:37:42,545 DEBUG   HandlerThread:3412444 [handler.py:handle_request():141] handle_request: partial_history
+2022-05-12 02:37:42,546 DEBUG   HandlerThread:3412444 [handler.py:handle_request():141] handle_request: partial_history
+2022-05-12 02:37:42,547 DEBUG   HandlerThread:3412444 [handler.py:handle_request():141] handle_request: partial_history
+2022-05-12 02:37:42,548 DEBUG   HandlerThread:3412444 [handler.py:handle_request():141] handle_request: partial_history
+2022-05-12 02:37:42,549 DEBUG   HandlerThread:3412444 [handler.py:handle_request():141] handle_request: partial_history
+2022-05-12 02:37:42,549 DEBUG   HandlerThread:3412444 [handler.py:handle_request():141] handle_request: partial_history
+2022-05-12 02:37:42,550 DEBUG   HandlerThread:3412444 [handler.py:handle_request():141] handle_request: partial_history
+2022-05-12 02:37:42,551 DEBUG   HandlerThread:3412444 [handler.py:handle_request():141] handle_request: partial_history
+2022-05-12 02:37:42,552 DEBUG   HandlerThread:3412444 [handler.py:handle_request():141] handle_request: partial_history
+2022-05-12 02:37:42,552 DEBUG   HandlerThread:3412444 [handler.py:handle_request():141] handle_request: partial_history
+2022-05-12 02:37:42,553 DEBUG   HandlerThread:3412444 [handler.py:handle_request():141] handle_request: partial_history
+2022-05-12 02:37:42,554 DEBUG   HandlerThread:3412444 [handler.py:handle_request():141] handle_request: partial_history
+2022-05-12 02:37:42,554 DEBUG   HandlerThread:3412444 [handler.py:handle_request():141] handle_request: partial_history
+2022-05-12 02:37:42,556 DEBUG   HandlerThread:3412444 [handler.py:handle_request():141] handle_request: partial_history
+2022-05-12 02:37:42,556 DEBUG   HandlerThread:3412444 [handler.py:handle_request():141] handle_request: partial_history
+2022-05-12 02:37:42,557 DEBUG   HandlerThread:3412444 [handler.py:handle_request():141] handle_request: partial_history
+2022-05-12 02:37:42,558 DEBUG   HandlerThread:3412444 [handler.py:handle_request():141] handle_request: partial_history
+2022-05-12 02:37:42,558 DEBUG   HandlerThread:3412444 [handler.py:handle_request():141] handle_request: partial_history
+2022-05-12 02:37:42,559 DEBUG   HandlerThread:3412444 [handler.py:handle_request():141] handle_request: partial_history
+2022-05-12 02:37:42,560 DEBUG   HandlerThread:3412444 [handler.py:handle_request():141] handle_request: partial_history
+2022-05-12 02:37:42,561 DEBUG   HandlerThread:3412444 [handler.py:handle_request():141] handle_request: partial_history
+2022-05-12 02:37:42,561 DEBUG   HandlerThread:3412444 [handler.py:handle_request():141] handle_request: partial_history
+2022-05-12 02:37:42,563 DEBUG   HandlerThread:3412444 [handler.py:handle_request():141] handle_request: partial_history
+2022-05-12 02:37:42,563 DEBUG   HandlerThread:3412444 [handler.py:handle_request():141] handle_request: partial_history
+2022-05-12 02:37:42,564 DEBUG   HandlerThread:3412444 [handler.py:handle_request():141] handle_request: partial_history
+2022-05-12 02:37:42,565 DEBUG   HandlerThread:3412444 [handler.py:handle_request():141] handle_request: partial_history
+2022-05-12 02:37:42,565 DEBUG   HandlerThread:3412444 [handler.py:handle_request():141] handle_request: partial_history
+2022-05-12 02:37:42,566 DEBUG   HandlerThread:3412444 [handler.py:handle_request():141] handle_request: partial_history
+2022-05-12 02:37:42,567 DEBUG   HandlerThread:3412444 [handler.py:handle_request():141] handle_request: partial_history
+2022-05-12 02:37:42,568 DEBUG   HandlerThread:3412444 [handler.py:handle_request():141] handle_request: partial_history
+2022-05-12 02:37:42,568 DEBUG   HandlerThread:3412444 [handler.py:handle_request():141] handle_request: partial_history
+2022-05-12 02:37:42,569 DEBUG   HandlerThread:3412444 [handler.py:handle_request():141] handle_request: partial_history
+2022-05-12 02:37:42,570 DEBUG   HandlerThread:3412444 [handler.py:handle_request():141] handle_request: partial_history
+2022-05-12 02:37:42,570 DEBUG   HandlerThread:3412444 [handler.py:handle_request():141] handle_request: partial_history
+2022-05-12 02:37:42,572 DEBUG   HandlerThread:3412444 [handler.py:handle_request():141] handle_request: partial_history
+2022-05-12 02:37:42,572 DEBUG   HandlerThread:3412444 [handler.py:handle_request():141] handle_request: partial_history
+2022-05-12 02:37:42,573 DEBUG   HandlerThread:3412444 [handler.py:handle_request():141] handle_request: partial_history
+2022-05-12 02:37:42,574 DEBUG   HandlerThread:3412444 [handler.py:handle_request():141] handle_request: partial_history
+2022-05-12 02:37:42,575 DEBUG   HandlerThread:3412444 [handler.py:handle_request():141] handle_request: partial_history
+2022-05-12 02:37:42,575 DEBUG   HandlerThread:3412444 [handler.py:handle_request():141] handle_request: partial_history
+2022-05-12 02:37:42,577 DEBUG   HandlerThread:3412444 [handler.py:handle_request():141] handle_request: partial_history
+2022-05-12 02:37:42,578 DEBUG   HandlerThread:3412444 [handler.py:handle_request():141] handle_request: partial_history
+2022-05-12 02:37:42,579 DEBUG   HandlerThread:3412444 [handler.py:handle_request():141] handle_request: partial_history
+2022-05-12 02:37:42,580 DEBUG   HandlerThread:3412444 [handler.py:handle_request():141] handle_request: partial_history
+2022-05-12 02:37:42,580 DEBUG   HandlerThread:3412444 [handler.py:handle_request():141] handle_request: partial_history
+2022-05-12 02:37:42,581 DEBUG   HandlerThread:3412444 [handler.py:handle_request():141] handle_request: partial_history
+2022-05-12 02:37:42,584 DEBUG   HandlerThread:3412444 [handler.py:handle_request():141] handle_request: partial_history
+2022-05-12 02:37:42,584 DEBUG   HandlerThread:3412444 [handler.py:handle_request():141] handle_request: partial_history
+2022-05-12 02:37:42,585 DEBUG   HandlerThread:3412444 [handler.py:handle_request():141] handle_request: partial_history
+2022-05-12 02:37:42,587 DEBUG   HandlerThread:3412444 [handler.py:handle_request():141] handle_request: partial_history
+2022-05-12 02:37:42,589 DEBUG   HandlerThread:3412444 [handler.py:handle_request():141] handle_request: partial_history
+2022-05-12 02:37:42,589 DEBUG   HandlerThread:3412444 [handler.py:handle_request():141] handle_request: partial_history
+2022-05-12 02:37:42,590 DEBUG   HandlerThread:3412444 [handler.py:handle_request():141] handle_request: partial_history
+2022-05-12 02:37:42,591 DEBUG   HandlerThread:3412444 [handler.py:handle_request():141] handle_request: partial_history
+2022-05-12 02:37:42,591 DEBUG   HandlerThread:3412444 [handler.py:handle_request():141] handle_request: partial_history
+2022-05-12 02:37:42,592 DEBUG   HandlerThread:3412444 [handler.py:handle_request():141] handle_request: partial_history
+2022-05-12 02:37:42,593 DEBUG   HandlerThread:3412444 [handler.py:handle_request():141] handle_request: partial_history
+2022-05-12 02:37:42,593 DEBUG   HandlerThread:3412444 [handler.py:handle_request():141] handle_request: partial_history
+2022-05-12 02:37:42,595 DEBUG   HandlerThread:3412444 [handler.py:handle_request():141] handle_request: partial_history
+2022-05-12 02:37:42,596 DEBUG   HandlerThread:3412444 [handler.py:handle_request():141] handle_request: partial_history
+2022-05-12 02:37:42,596 DEBUG   HandlerThread:3412444 [handler.py:handle_request():141] handle_request: partial_history
+2022-05-12 02:37:42,597 DEBUG   HandlerThread:3412444 [handler.py:handle_request():141] handle_request: partial_history
+2022-05-12 02:37:42,598 DEBUG   HandlerThread:3412444 [handler.py:handle_request():141] handle_request: partial_history
+2022-05-12 02:37:42,598 DEBUG   HandlerThread:3412444 [handler.py:handle_request():141] handle_request: partial_history
+2022-05-12 02:37:42,599 DEBUG   HandlerThread:3412444 [handler.py:handle_request():141] handle_request: partial_history
+2022-05-12 02:37:42,600 DEBUG   HandlerThread:3412444 [handler.py:handle_request():141] handle_request: partial_history
+2022-05-12 02:37:42,600 DEBUG   HandlerThread:3412444 [handler.py:handle_request():141] handle_request: partial_history
+2022-05-12 02:37:42,602 DEBUG   HandlerThread:3412444 [handler.py:handle_request():141] handle_request: partial_history
+2022-05-12 02:37:42,603 DEBUG   HandlerThread:3412444 [handler.py:handle_request():141] handle_request: partial_history
+2022-05-12 02:37:42,603 DEBUG   HandlerThread:3412444 [handler.py:handle_request():141] handle_request: partial_history
+2022-05-12 02:37:42,604 DEBUG   HandlerThread:3412444 [handler.py:handle_request():141] handle_request: partial_history
+2022-05-12 02:37:42,605 DEBUG   HandlerThread:3412444 [handler.py:handle_request():141] handle_request: partial_history
+2022-05-12 02:37:42,605 DEBUG   HandlerThread:3412444 [handler.py:handle_request():141] handle_request: partial_history
+2022-05-12 02:37:42,606 DEBUG   HandlerThread:3412444 [handler.py:handle_request():141] handle_request: partial_history
+2022-05-12 02:37:42,607 DEBUG   HandlerThread:3412444 [handler.py:handle_request():141] handle_request: partial_history
+2022-05-12 02:37:42,607 DEBUG   HandlerThread:3412444 [handler.py:handle_request():141] handle_request: partial_history
+2022-05-12 02:37:42,609 DEBUG   HandlerThread:3412444 [handler.py:handle_request():141] handle_request: partial_history
+2022-05-12 02:37:42,609 DEBUG   HandlerThread:3412444 [handler.py:handle_request():141] handle_request: partial_history
+2022-05-12 02:37:42,610 DEBUG   HandlerThread:3412444 [handler.py:handle_request():141] handle_request: partial_history
+2022-05-12 02:37:42,611 DEBUG   HandlerThread:3412444 [handler.py:handle_request():141] handle_request: partial_history
+2022-05-12 02:37:42,612 DEBUG   HandlerThread:3412444 [handler.py:handle_request():141] handle_request: partial_history
+2022-05-12 02:37:42,612 DEBUG   HandlerThread:3412444 [handler.py:handle_request():141] handle_request: partial_history
+2022-05-12 02:37:42,613 DEBUG   HandlerThread:3412444 [handler.py:handle_request():141] handle_request: partial_history
+2022-05-12 02:37:42,614 DEBUG   HandlerThread:3412444 [handler.py:handle_request():141] handle_request: partial_history
+2022-05-12 02:37:42,615 DEBUG   HandlerThread:3412444 [handler.py:handle_request():141] handle_request: partial_history
+2022-05-12 02:37:42,616 DEBUG   HandlerThread:3412444 [handler.py:handle_request():141] handle_request: partial_history
+2022-05-12 02:37:42,617 DEBUG   HandlerThread:3412444 [handler.py:handle_request():141] handle_request: partial_history
+2022-05-12 02:37:42,617 DEBUG   HandlerThread:3412444 [handler.py:handle_request():141] handle_request: partial_history
+2022-05-12 02:37:42,619 DEBUG   HandlerThread:3412444 [handler.py:handle_request():141] handle_request: partial_history
+2022-05-12 02:37:42,620 DEBUG   HandlerThread:3412444 [handler.py:handle_request():141] handle_request: partial_history
+2022-05-12 02:37:42,620 DEBUG   HandlerThread:3412444 [handler.py:handle_request():141] handle_request: partial_history
+2022-05-12 02:37:42,621 DEBUG   HandlerThread:3412444 [handler.py:handle_request():141] handle_request: partial_history
+2022-05-12 02:37:42,622 DEBUG   HandlerThread:3412444 [handler.py:handle_request():141] handle_request: partial_history
+2022-05-12 02:37:42,622 DEBUG   HandlerThread:3412444 [handler.py:handle_request():141] handle_request: partial_history
+2022-05-12 02:37:42,624 DEBUG   HandlerThread:3412444 [handler.py:handle_request():141] handle_request: partial_history
+2022-05-12 02:37:42,624 DEBUG   HandlerThread:3412444 [handler.py:handle_request():141] handle_request: partial_history
+2022-05-12 02:37:42,625 DEBUG   HandlerThread:3412444 [handler.py:handle_request():141] handle_request: partial_history
+2022-05-12 02:37:42,627 DEBUG   HandlerThread:3412444 [handler.py:handle_request():141] handle_request: partial_history
+2022-05-12 02:37:42,627 DEBUG   HandlerThread:3412444 [handler.py:handle_request():141] handle_request: partial_history
+2022-05-12 02:37:42,628 DEBUG   HandlerThread:3412444 [handler.py:handle_request():141] handle_request: partial_history
+2022-05-12 02:37:42,629 DEBUG   HandlerThread:3412444 [handler.py:handle_request():141] handle_request: partial_history
+2022-05-12 02:37:42,629 DEBUG   HandlerThread:3412444 [handler.py:handle_request():141] handle_request: partial_history
+2022-05-12 02:37:42,630 DEBUG   HandlerThread:3412444 [handler.py:handle_request():141] handle_request: partial_history
+2022-05-12 02:37:42,631 DEBUG   HandlerThread:3412444 [handler.py:handle_request():141] handle_request: partial_history
+2022-05-12 02:37:42,632 DEBUG   HandlerThread:3412444 [handler.py:handle_request():141] handle_request: partial_history
+2022-05-12 02:37:42,632 DEBUG   HandlerThread:3412444 [handler.py:handle_request():141] handle_request: partial_history
+2022-05-12 02:37:42,634 DEBUG   HandlerThread:3412444 [handler.py:handle_request():141] handle_request: partial_history
+2022-05-12 02:37:42,635 DEBUG   HandlerThread:3412444 [handler.py:handle_request():141] handle_request: partial_history
+2022-05-12 02:37:42,636 DEBUG   HandlerThread:3412444 [handler.py:handle_request():141] handle_request: partial_history
+2022-05-12 02:37:42,636 DEBUG   HandlerThread:3412444 [handler.py:handle_request():141] handle_request: partial_history
+2022-05-12 02:37:42,637 DEBUG   HandlerThread:3412444 [handler.py:handle_request():141] handle_request: partial_history
+2022-05-12 02:37:42,638 DEBUG   HandlerThread:3412444 [handler.py:handle_request():141] handle_request: partial_history
+2022-05-12 02:37:42,639 DEBUG   HandlerThread:3412444 [handler.py:handle_request():141] handle_request: partial_history
+2022-05-12 02:37:42,639 DEBUG   HandlerThread:3412444 [handler.py:handle_request():141] handle_request: partial_history
+2022-05-12 02:37:42,640 DEBUG   HandlerThread:3412444 [handler.py:handle_request():141] handle_request: partial_history
+2022-05-12 02:37:42,641 DEBUG   HandlerThread:3412444 [handler.py:handle_request():141] handle_request: partial_history
+2022-05-12 02:37:42,642 DEBUG   HandlerThread:3412444 [handler.py:handle_request():141] handle_request: partial_history
+2022-05-12 02:37:42,642 DEBUG   HandlerThread:3412444 [handler.py:handle_request():141] handle_request: partial_history
+2022-05-12 02:37:42,643 DEBUG   HandlerThread:3412444 [handler.py:handle_request():141] handle_request: partial_history
+2022-05-12 02:37:42,644 DEBUG   HandlerThread:3412444 [handler.py:handle_request():141] handle_request: partial_history
+2022-05-12 02:37:42,645 DEBUG   HandlerThread:3412444 [handler.py:handle_request():141] handle_request: partial_history
+2022-05-12 02:37:42,646 DEBUG   HandlerThread:3412444 [handler.py:handle_request():141] handle_request: partial_history
+2022-05-12 02:37:43,089 DEBUG   SenderThread:3412444 [sender.py:send():232] send: telemetry
+2022-05-12 02:37:44,479 INFO    Thread-7  :3412444 [dir_watcher.py:_on_file_modified():257] file/dir modified: /scratch/mnk2978/hpml/finalproj/ModelParallel/wandb/run-20220512_023529-3ur3gwvy/files/output.log
+2022-05-12 02:37:45,479 INFO    Thread-7  :3412444 [dir_watcher.py:_on_file_modified():257] file/dir modified: /scratch/mnk2978/hpml/finalproj/ModelParallel/wandb/run-20220512_023529-3ur3gwvy/files/output.log
+2022-05-12 02:37:45,923 DEBUG   SenderThread:3412444 [sender.py:send():232] send: exit
+2022-05-12 02:37:45,923 INFO    SenderThread:3412444 [sender.py:send_exit():368] handling exit code: 1
+2022-05-12 02:37:45,923 DEBUG   HandlerThread:3412444 [handler.py:handle_request():141] handle_request: poll_exit
+2022-05-12 02:37:45,923 INFO    SenderThread:3412444 [sender.py:send_exit():370] handling runtime: 135
+2022-05-12 02:37:45,924 INFO    SenderThread:3412444 [sender.py:_save_file():948] saving file wandb-summary.json with policy end
+2022-05-12 02:37:45,924 INFO    SenderThread:3412444 [sender.py:send_exit():376] send defer
+2022-05-12 02:37:45,924 DEBUG   SenderThread:3412444 [sender.py:send_request():246] send_request: poll_exit
+2022-05-12 02:37:45,924 DEBUG   HandlerThread:3412444 [handler.py:handle_request():141] handle_request: defer
+2022-05-12 02:37:45,924 INFO    HandlerThread:3412444 [handler.py:handle_request_defer():164] handle defer: 0
+2022-05-12 02:37:45,924 DEBUG   SenderThread:3412444 [sender.py:send_request():246] send_request: defer
+2022-05-12 02:37:45,924 INFO    SenderThread:3412444 [sender.py:send_request_defer():385] handle sender defer: 0
+2022-05-12 02:37:45,924 INFO    SenderThread:3412444 [sender.py:transition_state():389] send defer: 1
+2022-05-12 02:37:45,925 DEBUG   HandlerThread:3412444 [handler.py:handle_request():141] handle_request: defer
+2022-05-12 02:37:45,925 INFO    HandlerThread:3412444 [handler.py:handle_request_defer():164] handle defer: 1
+2022-05-12 02:37:45,967 DEBUG   SenderThread:3412444 [sender.py:send_request():246] send_request: defer
+2022-05-12 02:37:45,967 INFO    SenderThread:3412444 [sender.py:send_request_defer():385] handle sender defer: 1
+2022-05-12 02:37:45,967 INFO    SenderThread:3412444 [sender.py:transition_state():389] send defer: 2
+2022-05-12 02:37:45,967 DEBUG   SenderThread:3412444 [sender.py:send():232] send: stats
+2022-05-12 02:37:45,968 DEBUG   HandlerThread:3412444 [handler.py:handle_request():141] handle_request: defer
+2022-05-12 02:37:45,968 INFO    HandlerThread:3412444 [handler.py:handle_request_defer():164] handle defer: 2
+2022-05-12 02:37:45,987 DEBUG   SenderThread:3412444 [sender.py:send():232] send: history
+2022-05-12 02:37:46,011 DEBUG   SenderThread:3412444 [sender.py:send():232] send: summary
+2022-05-12 02:37:46,024 INFO    SenderThread:3412444 [sender.py:_save_file():948] saving file wandb-summary.json with policy end
+2022-05-12 02:37:46,024 DEBUG   SenderThread:3412444 [sender.py:send_request():246] send_request: defer
+2022-05-12 02:37:46,024 INFO    SenderThread:3412444 [sender.py:send_request_defer():385] handle sender defer: 2
+2022-05-12 02:37:46,024 INFO    SenderThread:3412444 [sender.py:transition_state():389] send defer: 3
+2022-05-12 02:37:46,024 DEBUG   HandlerThread:3412444 [handler.py:handle_request():141] handle_request: defer
+2022-05-12 02:37:46,024 INFO    HandlerThread:3412444 [handler.py:handle_request_defer():164] handle defer: 3
+2022-05-12 02:37:46,025 DEBUG   SenderThread:3412444 [sender.py:send_request():246] send_request: defer
+2022-05-12 02:37:46,025 INFO    SenderThread:3412444 [sender.py:send_request_defer():385] handle sender defer: 3
+2022-05-12 02:37:46,025 INFO    SenderThread:3412444 [sender.py:transition_state():389] send defer: 4
+2022-05-12 02:37:46,025 DEBUG   HandlerThread:3412444 [handler.py:handle_request():141] handle_request: poll_exit
+2022-05-12 02:37:46,025 DEBUG   HandlerThread:3412444 [handler.py:handle_request():141] handle_request: defer
+2022-05-12 02:37:46,025 DEBUG   SenderThread:3412444 [sender.py:send_request():246] send_request: poll_exit
+2022-05-12 02:37:46,025 INFO    HandlerThread:3412444 [handler.py:handle_request_defer():164] handle defer: 4
+2022-05-12 02:37:46,034 DEBUG   SenderThread:3412444 [sender.py:send():232] send: summary
+2022-05-12 02:37:46,048 INFO    SenderThread:3412444 [sender.py:_save_file():948] saving file wandb-summary.json with policy end
+2022-05-12 02:37:46,048 DEBUG   SenderThread:3412444 [sender.py:send_request():246] send_request: defer
+2022-05-12 02:37:46,048 INFO    SenderThread:3412444 [sender.py:send_request_defer():385] handle sender defer: 4
+2022-05-12 02:37:46,048 INFO    SenderThread:3412444 [sender.py:transition_state():389] send defer: 5
+2022-05-12 02:37:46,049 DEBUG   HandlerThread:3412444 [handler.py:handle_request():141] handle_request: defer
+2022-05-12 02:37:46,049 INFO    HandlerThread:3412444 [handler.py:handle_request_defer():164] handle defer: 5
+2022-05-12 02:37:46,049 DEBUG   SenderThread:3412444 [sender.py:send_request():246] send_request: defer
+2022-05-12 02:37:46,049 INFO    SenderThread:3412444 [sender.py:send_request_defer():385] handle sender defer: 5
+2022-05-12 02:37:46,126 DEBUG   HandlerThread:3412444 [handler.py:handle_request():141] handle_request: poll_exit
+2022-05-12 02:37:46,480 INFO    Thread-7  :3412444 [dir_watcher.py:_on_file_modified():257] file/dir modified: /scratch/mnk2978/hpml/finalproj/ModelParallel/wandb/run-20220512_023529-3ur3gwvy/files/wandb-summary.json
+2022-05-12 02:37:46,480 INFO    Thread-7  :3412444 [dir_watcher.py:_on_file_modified():257] file/dir modified: /scratch/mnk2978/hpml/finalproj/ModelParallel/wandb/run-20220512_023529-3ur3gwvy/files/output.log
+2022-05-12 02:37:46,553 INFO    SenderThread:3412444 [sender.py:transition_state():389] send defer: 6
+2022-05-12 02:37:46,553 DEBUG   SenderThread:3412444 [sender.py:send_request():246] send_request: poll_exit
+2022-05-12 02:37:46,553 DEBUG   HandlerThread:3412444 [handler.py:handle_request():141] handle_request: defer
+2022-05-12 02:37:46,553 INFO    HandlerThread:3412444 [handler.py:handle_request_defer():164] handle defer: 6
+2022-05-12 02:37:46,553 DEBUG   SenderThread:3412444 [sender.py:send_request():246] send_request: defer
+2022-05-12 02:37:46,553 INFO    SenderThread:3412444 [sender.py:send_request_defer():385] handle sender defer: 6
+2022-05-12 02:37:46,553 INFO    SenderThread:3412444 [dir_watcher.py:finish():312] shutting down directory watcher
+2022-05-12 02:37:46,654 DEBUG   HandlerThread:3412444 [handler.py:handle_request():141] handle_request: poll_exit
+2022-05-12 02:37:47,480 INFO    Thread-7  :3412444 [dir_watcher.py:_on_file_modified():257] file/dir modified: /scratch/mnk2978/hpml/finalproj/ModelParallel/wandb/run-20220512_023529-3ur3gwvy/files/config.yaml
+2022-05-12 02:37:47,480 INFO    SenderThread:3412444 [dir_watcher.py:finish():342] scan: /scratch/mnk2978/hpml/finalproj/ModelParallel/wandb/run-20220512_023529-3ur3gwvy/files
+2022-05-12 02:37:47,480 INFO    SenderThread:3412444 [dir_watcher.py:finish():356] scan save: /scratch/mnk2978/hpml/finalproj/ModelParallel/wandb/run-20220512_023529-3ur3gwvy/files/conda-environment.yaml conda-environment.yaml
+2022-05-12 02:37:47,480 INFO    SenderThread:3412444 [dir_watcher.py:finish():356] scan save: /scratch/mnk2978/hpml/finalproj/ModelParallel/wandb/run-20220512_023529-3ur3gwvy/files/wandb-metadata.json wandb-metadata.json
+2022-05-12 02:37:47,481 INFO    SenderThread:3412444 [dir_watcher.py:finish():356] scan save: /scratch/mnk2978/hpml/finalproj/ModelParallel/wandb/run-20220512_023529-3ur3gwvy/files/config.yaml config.yaml
+2022-05-12 02:37:47,483 INFO    SenderThread:3412444 [dir_watcher.py:finish():356] scan save: /scratch/mnk2978/hpml/finalproj/ModelParallel/wandb/run-20220512_023529-3ur3gwvy/files/requirements.txt requirements.txt
+2022-05-12 02:37:47,485 INFO    SenderThread:3412444 [dir_watcher.py:finish():356] scan save: /scratch/mnk2978/hpml/finalproj/ModelParallel/wandb/run-20220512_023529-3ur3gwvy/files/wandb-summary.json wandb-summary.json
+2022-05-12 02:37:47,488 INFO    SenderThread:3412444 [dir_watcher.py:finish():356] scan save: /scratch/mnk2978/hpml/finalproj/ModelParallel/wandb/run-20220512_023529-3ur3gwvy/files/output.log output.log
+2022-05-12 02:37:47,491 INFO    SenderThread:3412444 [sender.py:transition_state():389] send defer: 7
+2022-05-12 02:37:47,491 DEBUG   SenderThread:3412444 [sender.py:send_request():246] send_request: poll_exit
+2022-05-12 02:37:47,491 DEBUG   HandlerThread:3412444 [handler.py:handle_request():141] handle_request: defer
+2022-05-12 02:37:47,491 INFO    HandlerThread:3412444 [handler.py:handle_request_defer():164] handle defer: 7
+2022-05-12 02:37:47,494 DEBUG   SenderThread:3412444 [sender.py:send_request():246] send_request: defer
+2022-05-12 02:37:47,494 INFO    SenderThread:3412444 [sender.py:send_request_defer():385] handle sender defer: 7
+2022-05-12 02:37:47,494 INFO    SenderThread:3412444 [file_pusher.py:finish():145] shutting down file pusher
+2022-05-12 02:37:47,595 DEBUG   HandlerThread:3412444 [handler.py:handle_request():141] handle_request: poll_exit
+2022-05-12 02:37:47,595 DEBUG   SenderThread:3412444 [sender.py:send_request():246] send_request: poll_exit
+2022-05-12 02:37:47,696 DEBUG   HandlerThread:3412444 [handler.py:handle_request():141] handle_request: poll_exit
+2022-05-12 02:37:47,696 DEBUG   SenderThread:3412444 [sender.py:send_request():246] send_request: poll_exit
+2022-05-12 02:37:47,797 DEBUG   HandlerThread:3412444 [handler.py:handle_request():141] handle_request: poll_exit
+2022-05-12 02:37:47,797 DEBUG   SenderThread:3412444 [sender.py:send_request():246] send_request: poll_exit
+2022-05-12 02:37:47,810 INFO    Thread-12 :3412444 [upload_job.py:push():132] Uploaded file /scratch/mnk2978/hpml/finalproj/ModelParallel/wandb/run-20220512_023529-3ur3gwvy/files/conda-environment.yaml
+2022-05-12 02:37:47,839 INFO    Thread-13 :3412444 [upload_job.py:push():132] Uploaded file /scratch/mnk2978/hpml/finalproj/ModelParallel/wandb/run-20220512_023529-3ur3gwvy/files/config.yaml
+2022-05-12 02:37:47,857 INFO    Thread-16 :3412444 [upload_job.py:push():132] Uploaded file /scratch/mnk2978/hpml/finalproj/ModelParallel/wandb/run-20220512_023529-3ur3gwvy/files/output.log
+2022-05-12 02:37:47,887 INFO    Thread-15 :3412444 [upload_job.py:push():132] Uploaded file /scratch/mnk2978/hpml/finalproj/ModelParallel/wandb/run-20220512_023529-3ur3gwvy/files/wandb-summary.json
+2022-05-12 02:37:47,898 DEBUG   HandlerThread:3412444 [handler.py:handle_request():141] handle_request: poll_exit
+2022-05-12 02:37:47,898 DEBUG   SenderThread:3412444 [sender.py:send_request():246] send_request: poll_exit
+2022-05-12 02:37:47,998 DEBUG   HandlerThread:3412444 [handler.py:handle_request():141] handle_request: poll_exit
+2022-05-12 02:37:47,999 DEBUG   SenderThread:3412444 [sender.py:send_request():246] send_request: poll_exit
+2022-05-12 02:37:48,044 INFO    Thread-14 :3412444 [upload_job.py:push():132] Uploaded file /scratch/mnk2978/hpml/finalproj/ModelParallel/wandb/run-20220512_023529-3ur3gwvy/files/requirements.txt
+2022-05-12 02:37:48,099 DEBUG   HandlerThread:3412444 [handler.py:handle_request():141] handle_request: poll_exit
+2022-05-12 02:37:48,099 DEBUG   SenderThread:3412444 [sender.py:send_request():246] send_request: poll_exit
+2022-05-12 02:37:48,200 DEBUG   HandlerThread:3412444 [handler.py:handle_request():141] handle_request: poll_exit
+2022-05-12 02:37:48,200 DEBUG   SenderThread:3412444 [sender.py:send_request():246] send_request: poll_exit
+2022-05-12 02:37:48,244 INFO    Thread-6  :3412444 [sender.py:transition_state():389] send defer: 8
+2022-05-12 02:37:48,245 DEBUG   HandlerThread:3412444 [handler.py:handle_request():141] handle_request: defer
+2022-05-12 02:37:48,245 INFO    HandlerThread:3412444 [handler.py:handle_request_defer():164] handle defer: 8
+2022-05-12 02:37:48,245 DEBUG   SenderThread:3412444 [sender.py:send_request():246] send_request: defer
+2022-05-12 02:37:48,245 INFO    SenderThread:3412444 [sender.py:send_request_defer():385] handle sender defer: 8
+2022-05-12 02:37:48,300 DEBUG   HandlerThread:3412444 [handler.py:handle_request():141] handle_request: poll_exit
+2022-05-12 02:37:48,422 INFO    SenderThread:3412444 [sender.py:transition_state():389] send defer: 9
+2022-05-12 02:37:48,422 DEBUG   SenderThread:3412444 [sender.py:send_request():246] send_request: poll_exit
+2022-05-12 02:37:48,422 DEBUG   HandlerThread:3412444 [handler.py:handle_request():141] handle_request: defer
+2022-05-12 02:37:48,422 INFO    HandlerThread:3412444 [handler.py:handle_request_defer():164] handle defer: 9
+2022-05-12 02:37:48,422 DEBUG   SenderThread:3412444 [sender.py:send_request():246] send_request: defer
+2022-05-12 02:37:48,422 INFO    SenderThread:3412444 [sender.py:send_request_defer():385] handle sender defer: 9
+2022-05-12 02:37:48,423 INFO    SenderThread:3412444 [sender.py:transition_state():389] send defer: 10
+2022-05-12 02:37:48,423 DEBUG   HandlerThread:3412444 [handler.py:handle_request():141] handle_request: defer
+2022-05-12 02:37:48,423 DEBUG   SenderThread:3412444 [sender.py:send():232] send: final
+2022-05-12 02:37:48,423 INFO    HandlerThread:3412444 [handler.py:handle_request_defer():164] handle defer: 10
+2022-05-12 02:37:48,423 DEBUG   SenderThread:3412444 [sender.py:send():232] send: footer
+2022-05-12 02:37:48,423 DEBUG   SenderThread:3412444 [sender.py:send_request():246] send_request: defer
+2022-05-12 02:37:48,423 INFO    SenderThread:3412444 [sender.py:send_request_defer():385] handle sender defer: 10
+2022-05-12 02:37:48,523 DEBUG   HandlerThread:3412444 [handler.py:handle_request():141] handle_request: poll_exit
+2022-05-12 02:37:48,523 DEBUG   SenderThread:3412444 [sender.py:send_request():246] send_request: poll_exit
+2022-05-12 02:37:48,523 INFO    SenderThread:3412444 [file_pusher.py:join():150] waiting for file pusher
+2022-05-12 02:37:48,732 DEBUG   HandlerThread:3412444 [handler.py:handle_request():141] handle_request: sampled_history
+2022-05-12 02:37:48,785 DEBUG   HandlerThread:3412444 [handler.py:handle_request():141] handle_request: get_summary
+2022-05-12 02:37:48,795 DEBUG   HandlerThread:3412444 [handler.py:handle_request():141] handle_request: shutdown
+2022-05-12 02:37:48,796 INFO    HandlerThread:3412444 [handler.py:finish():806] shutting down handler
+2022-05-12 02:37:49,423 INFO    WriterThread:3412444 [datastore.py:close():279] close: /scratch/mnk2978/hpml/finalproj/ModelParallel/wandb/run-20220512_023529-3ur3gwvy/run-3ur3gwvy.wandb
+2022-05-12 02:37:49,632 INFO    SenderThread:3412444 [sender.py:finish():1110] shutting down sender
+2022-05-12 02:37:49,632 INFO    SenderThread:3412444 [file_pusher.py:finish():145] shutting down file pusher
+2022-05-12 02:37:49,632 INFO    SenderThread:3412444 [file_pusher.py:join():150] waiting for file pusher
+2022-05-12 02:37:49,634 INFO    MainThread:3412444 [internal.py:handle_exit():80] Internal process exited

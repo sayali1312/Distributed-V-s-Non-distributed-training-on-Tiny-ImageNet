@@ -1,0 +1,331 @@
+==> Preparing data..
+==> Building model..
+<class 'torchvision.models.resnet.ResNet'>
+ResNet(
+  (conv1): Conv2d(3, 64, kernel_size=(7, 7), stride=(2, 2), padding=(3, 3), bias=False)
+  (bn1): BatchNorm2d(64, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+  (relu): ReLU(inplace=True)
+  (maxpool): MaxPool2d(kernel_size=3, stride=2, padding=1, dilation=1, ceil_mode=False)
+  (layer1): Sequential(
+    (0): Bottleneck(
+      (conv1): Conv2d(64, 64, kernel_size=(1, 1), stride=(1, 1), bias=False)
+      (bn1): BatchNorm2d(64, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      (conv2): Conv2d(64, 64, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+      (bn2): BatchNorm2d(64, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      (conv3): Conv2d(64, 256, kernel_size=(1, 1), stride=(1, 1), bias=False)
+      (bn3): BatchNorm2d(256, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      (relu): ReLU(inplace=True)
+      (downsample): Sequential(
+        (0): Conv2d(64, 256, kernel_size=(1, 1), stride=(1, 1), bias=False)
+        (1): BatchNorm2d(256, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      )
+    )
+    (1): Bottleneck(
+      (conv1): Conv2d(256, 64, kernel_size=(1, 1), stride=(1, 1), bias=False)
+      (bn1): BatchNorm2d(64, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      (conv2): Conv2d(64, 64, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+      (bn2): BatchNorm2d(64, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      (conv3): Conv2d(64, 256, kernel_size=(1, 1), stride=(1, 1), bias=False)
+      (bn3): BatchNorm2d(256, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      (relu): ReLU(inplace=True)
+    )
+    (2): Bottleneck(
+      (conv1): Conv2d(256, 64, kernel_size=(1, 1), stride=(1, 1), bias=False)
+      (bn1): BatchNorm2d(64, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      (conv2): Conv2d(64, 64, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+      (bn2): BatchNorm2d(64, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      (conv3): Conv2d(64, 256, kernel_size=(1, 1), stride=(1, 1), bias=False)
+      (bn3): BatchNorm2d(256, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      (relu): ReLU(inplace=True)
+    )
+  )
+  (layer2): Sequential(
+    (0): Bottleneck(
+      (conv1): Conv2d(256, 128, kernel_size=(1, 1), stride=(1, 1), bias=False)
+      (bn1): BatchNorm2d(128, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      (conv2): Conv2d(128, 128, kernel_size=(3, 3), stride=(2, 2), padding=(1, 1), bias=False)
+      (bn2): BatchNorm2d(128, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      (conv3): Conv2d(128, 512, kernel_size=(1, 1), stride=(1, 1), bias=False)
+      (bn3): BatchNorm2d(512, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      (relu): ReLU(inplace=True)
+      (downsample): Sequential(
+        (0): Conv2d(256, 512, kernel_size=(1, 1), stride=(2, 2), bias=False)
+        (1): BatchNorm2d(512, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      )
+    )
+    (1): Bottleneck(
+      (conv1): Conv2d(512, 128, kernel_size=(1, 1), stride=(1, 1), bias=False)
+      (bn1): BatchNorm2d(128, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      (conv2): Conv2d(128, 128, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+      (bn2): BatchNorm2d(128, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      (conv3): Conv2d(128, 512, kernel_size=(1, 1), stride=(1, 1), bias=False)
+      (bn3): BatchNorm2d(512, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      (relu): ReLU(inplace=True)
+    )
+    (2): Bottleneck(
+      (conv1): Conv2d(512, 128, kernel_size=(1, 1), stride=(1, 1), bias=False)
+      (bn1): BatchNorm2d(128, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      (conv2): Conv2d(128, 128, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+      (bn2): BatchNorm2d(128, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      (conv3): Conv2d(128, 512, kernel_size=(1, 1), stride=(1, 1), bias=False)
+      (bn3): BatchNorm2d(512, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      (relu): ReLU(inplace=True)
+    )
+    (3): Bottleneck(
+      (conv1): Conv2d(512, 128, kernel_size=(1, 1), stride=(1, 1), bias=False)
+      (bn1): BatchNorm2d(128, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      (conv2): Conv2d(128, 128, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+      (bn2): BatchNorm2d(128, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      (conv3): Conv2d(128, 512, kernel_size=(1, 1), stride=(1, 1), bias=False)
+      (bn3): BatchNorm2d(512, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      (relu): ReLU(inplace=True)
+    )
+  )
+  (layer3): Sequential(
+    (0): Bottleneck(
+      (conv1): Conv2d(512, 256, kernel_size=(1, 1), stride=(1, 1), bias=False)
+      (bn1): BatchNorm2d(256, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      (conv2): Conv2d(256, 256, kernel_size=(3, 3), stride=(2, 2), padding=(1, 1), bias=False)
+      (bn2): BatchNorm2d(256, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      (conv3): Conv2d(256, 1024, kernel_size=(1, 1), stride=(1, 1), bias=False)
+      (bn3): BatchNorm2d(1024, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      (relu): ReLU(inplace=True)
+      (downsample): Sequential(
+        (0): Conv2d(512, 1024, kernel_size=(1, 1), stride=(2, 2), bias=False)
+        (1): BatchNorm2d(1024, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      )
+    )
+    (1): Bottleneck(
+      (conv1): Conv2d(1024, 256, kernel_size=(1, 1), stride=(1, 1), bias=False)
+      (bn1): BatchNorm2d(256, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      (conv2): Conv2d(256, 256, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+      (bn2): BatchNorm2d(256, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      (conv3): Conv2d(256, 1024, kernel_size=(1, 1), stride=(1, 1), bias=False)
+      (bn3): BatchNorm2d(1024, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      (relu): ReLU(inplace=True)
+    )
+    (2): Bottleneck(
+      (conv1): Conv2d(1024, 256, kernel_size=(1, 1), stride=(1, 1), bias=False)
+      (bn1): BatchNorm2d(256, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      (conv2): Conv2d(256, 256, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+      (bn2): BatchNorm2d(256, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      (conv3): Conv2d(256, 1024, kernel_size=(1, 1), stride=(1, 1), bias=False)
+      (bn3): BatchNorm2d(1024, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      (relu): ReLU(inplace=True)
+    )
+    (3): Bottleneck(
+      (conv1): Conv2d(1024, 256, kernel_size=(1, 1), stride=(1, 1), bias=False)
+      (bn1): BatchNorm2d(256, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      (conv2): Conv2d(256, 256, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+      (bn2): BatchNorm2d(256, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      (conv3): Conv2d(256, 1024, kernel_size=(1, 1), stride=(1, 1), bias=False)
+      (bn3): BatchNorm2d(1024, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      (relu): ReLU(inplace=True)
+    )
+    (4): Bottleneck(
+      (conv1): Conv2d(1024, 256, kernel_size=(1, 1), stride=(1, 1), bias=False)
+      (bn1): BatchNorm2d(256, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      (conv2): Conv2d(256, 256, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+      (bn2): BatchNorm2d(256, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      (conv3): Conv2d(256, 1024, kernel_size=(1, 1), stride=(1, 1), bias=False)
+      (bn3): BatchNorm2d(1024, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      (relu): ReLU(inplace=True)
+    )
+    (5): Bottleneck(
+      (conv1): Conv2d(1024, 256, kernel_size=(1, 1), stride=(1, 1), bias=False)
+      (bn1): BatchNorm2d(256, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      (conv2): Conv2d(256, 256, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+      (bn2): BatchNorm2d(256, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      (conv3): Conv2d(256, 1024, kernel_size=(1, 1), stride=(1, 1), bias=False)
+      (bn3): BatchNorm2d(1024, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      (relu): ReLU(inplace=True)
+    )
+  )
+  (layer4): Sequential(
+    (0): Bottleneck(
+      (conv1): Conv2d(1024, 512, kernel_size=(1, 1), stride=(1, 1), bias=False)
+      (bn1): BatchNorm2d(512, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      (conv2): Conv2d(512, 512, kernel_size=(3, 3), stride=(2, 2), padding=(1, 1), bias=False)
+      (bn2): BatchNorm2d(512, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      (conv3): Conv2d(512, 2048, kernel_size=(1, 1), stride=(1, 1), bias=False)
+      (bn3): BatchNorm2d(2048, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      (relu): ReLU(inplace=True)
+      (downsample): Sequential(
+        (0): Conv2d(1024, 2048, kernel_size=(1, 1), stride=(2, 2), bias=False)
+        (1): BatchNorm2d(2048, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      )
+    )
+    (1): Bottleneck(
+      (conv1): Conv2d(2048, 512, kernel_size=(1, 1), stride=(1, 1), bias=False)
+      (bn1): BatchNorm2d(512, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      (conv2): Conv2d(512, 512, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+      (bn2): BatchNorm2d(512, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      (conv3): Conv2d(512, 2048, kernel_size=(1, 1), stride=(1, 1), bias=False)
+      (bn3): BatchNorm2d(2048, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      (relu): ReLU(inplace=True)
+    )
+    (2): Bottleneck(
+      (conv1): Conv2d(2048, 512, kernel_size=(1, 1), stride=(1, 1), bias=False)
+      (bn1): BatchNorm2d(512, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      (conv2): Conv2d(512, 512, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+      (bn2): BatchNorm2d(512, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      (conv3): Conv2d(512, 2048, kernel_size=(1, 1), stride=(1, 1), bias=False)
+      (bn3): BatchNorm2d(2048, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      (relu): ReLU(inplace=True)
+    )
+  )
+  (avgpool): AdaptiveAvgPool2d(output_size=1)
+  (fc): Linear(in_features=2048, out_features=200, bias=True)
+)
+Epoch:0/90
+ [=>...............................................................]  Step: 140ms | Tot: 2s657ms | train_Loss: 10.221 | train_Acc: 0.474% (9/1 19/1000
+ [==>..............................................................]  Step: 138ms | Tot: 4s596ms | train_Loss: 9.348 | train_Acc: 0.485% (16/3 33/1000
+ [==>..............................................................]  Step: 138ms | Tot: 4s596ms | train_Loss: 9.348 | train_Acc: 0.485% (16/3 33/1000
+ [==>..............................................................]  Step: 138ms | Tot: 4s596ms | train_Loss: 9.348 | train_Acc: 0.485% (16/3 33/1000
+ [==>..............................................................]  Step: 138ms | Tot: 4s596ms | train_Loss: 9.348 | train_Acc: 0.485% (16/3 33/1000
+ [==>..............................................................]  Step: 138ms | Tot: 4s596ms | train_Loss: 9.348 | train_Acc: 0.485% (16/3 33/1000
+ [==>..............................................................]  Step: 138ms | Tot: 4s596ms | train_Loss: 9.348 | train_Acc: 0.485% (16/3 33/1000
+ [==>..............................................................]  Step: 138ms | Tot: 4s596ms | train_Loss: 9.348 | train_Acc: 0.485% (16/3 33/1000
+ [==>..............................................................]  Step: 138ms | Tot: 4s596ms | train_Loss: 9.348 | train_Acc: 0.485% (16/3 33/1000
+ [==>..............................................................]  Step: 138ms | Tot: 4s596ms | train_Loss: 9.348 | train_Acc: 0.485% (16/3 33/1000
+ [==>..............................................................]  Step: 138ms | Tot: 4s596ms | train_Loss: 9.348 | train_Acc: 0.485% (16/3 33/1000
+ [==>..............................................................]  Step: 138ms | Tot: 4s596ms | train_Loss: 9.348 | train_Acc: 0.485% (16/3 33/1000
+ [==>..............................................................]  Step: 138ms | Tot: 4s596ms | train_Loss: 9.348 | train_Acc: 0.485% (16/3 33/1000
+ [==>..............................................................]  Step: 138ms | Tot: 4s596ms | train_Loss: 9.348 | train_Acc: 0.485% (16/3 33/1000
+ [==>..............................................................]  Step: 138ms | Tot: 4s596ms | train_Loss: 9.348 | train_Acc: 0.485% (16/3 33/1000
+ [==>..............................................................]  Step: 138ms | Tot: 4s596ms | train_Loss: 9.348 | train_Acc: 0.485% (16/3 33/1000
+ [==>..............................................................]  Step: 138ms | Tot: 4s596ms | train_Loss: 9.348 | train_Acc: 0.485% (16/3 33/1000
+ [==>..............................................................]  Step: 138ms | Tot: 4s596ms | train_Loss: 9.348 | train_Acc: 0.485% (16/3 33/1000
+ [==>..............................................................]  Step: 138ms | Tot: 4s596ms | train_Loss: 9.348 | train_Acc: 0.485% (16/3 33/1000
+ [==>..............................................................]  Step: 138ms | Tot: 4s596ms | train_Loss: 9.348 | train_Acc: 0.485% (16/3 33/1000
+ [==>..............................................................]  Step: 138ms | Tot: 4s596ms | train_Loss: 9.348 | train_Acc: 0.485% (16/3 33/1000
+ [==>..............................................................]  Step: 138ms | Tot: 4s596ms | train_Loss: 9.348 | train_Acc: 0.485% (16/3 33/1000
+ [==>..............................................................]  Step: 138ms | Tot: 4s596ms | train_Loss: 9.348 | train_Acc: 0.485% (16/3 33/1000
+ [==>..............................................................]  Step: 138ms | Tot: 4s596ms | train_Loss: 9.348 | train_Acc: 0.485% (16/3 33/1000
+ [==>..............................................................]  Step: 138ms | Tot: 4s596ms | train_Loss: 9.348 | train_Acc: 0.485% (16/3 33/1000
+ [==>..............................................................]  Step: 138ms | Tot: 4s596ms | train_Loss: 9.348 | train_Acc: 0.485% (16/3 33/1000
+ [==>..............................................................]  Step: 138ms | Tot: 4s596ms | train_Loss: 9.348 | train_Acc: 0.485% (16/3 33/1000
+ [==>..............................................................]  Step: 138ms | Tot: 4s596ms | train_Loss: 9.348 | train_Acc: 0.485% (16/3 33/1000
+ [==>..............................................................]  Step: 138ms | Tot: 4s596ms | train_Loss: 9.348 | train_Acc: 0.485% (16/3 33/1000
+ [==>..............................................................]  Step: 138ms | Tot: 4s596ms | train_Loss: 9.348 | train_Acc: 0.485% (16/3 33/1000
+ [==>..............................................................]  Step: 138ms | Tot: 4s596ms | train_Loss: 9.348 | train_Acc: 0.485% (16/3 33/1000
+ [==>..............................................................]  Step: 138ms | Tot: 4s596ms | train_Loss: 9.348 | train_Acc: 0.485% (16/3 33/1000
+ [==>..............................................................]  Step: 138ms | Tot: 4s596ms | train_Loss: 9.348 | train_Acc: 0.485% (16/3 33/1000
+ [==>..............................................................]  Step: 138ms | Tot: 4s596ms | train_Loss: 9.348 | train_Acc: 0.485% (16/3 33/1000
+ [==>..............................................................]  Step: 138ms | Tot: 4s596ms | train_Loss: 9.348 | train_Acc: 0.485% (16/3 33/1000
+ [==>..............................................................]  Step: 138ms | Tot: 4s596ms | train_Loss: 9.348 | train_Acc: 0.485% (16/3 33/1000
+ [==>..............................................................]  Step: 138ms | Tot: 4s596ms | train_Loss: 9.348 | train_Acc: 0.485% (16/3 33/1000
+ [==>..............................................................]  Step: 138ms | Tot: 4s596ms | train_Loss: 9.348 | train_Acc: 0.485% (16/3 33/1000
+ [==>..............................................................]  Step: 138ms | Tot: 4s596ms | train_Loss: 9.348 | train_Acc: 0.485% (16/3 33/1000
+ [==>..............................................................]  Step: 138ms | Tot: 4s596ms | train_Loss: 9.348 | train_Acc: 0.485% (16/3 33/1000
+ [==>..............................................................]  Step: 138ms | Tot: 4s596ms | train_Loss: 9.348 | train_Acc: 0.485% (16/3 33/1000
+ [==>..............................................................]  Step: 138ms | Tot: 4s596ms | train_Loss: 9.348 | train_Acc: 0.485% (16/3 33/1000
+ [==>..............................................................]  Step: 138ms | Tot: 4s596ms | train_Loss: 9.348 | train_Acc: 0.485% (16/3 33/1000
+ [==>..............................................................]  Step: 138ms | Tot: 4s596ms | train_Loss: 9.348 | train_Acc: 0.485% (16/3 33/1000
+ [==>..............................................................]  Step: 138ms | Tot: 4s596ms | train_Loss: 9.348 | train_Acc: 0.485% (16/3 33/1000
+ [==>..............................................................]  Step: 138ms | Tot: 4s596ms | train_Loss: 9.348 | train_Acc: 0.485% (16/3 33/1000
+ [==>..............................................................]  Step: 138ms | Tot: 4s596ms | train_Loss: 9.348 | train_Acc: 0.485% (16/3 33/1000
+ [==>..............................................................]  Step: 138ms | Tot: 4s596ms | train_Loss: 9.348 | train_Acc: 0.485% (16/3 33/1000
+ [==>..............................................................]  Step: 138ms | Tot: 4s596ms | train_Loss: 9.348 | train_Acc: 0.485% (16/3 33/1000
+ [==>..............................................................]  Step: 138ms | Tot: 4s596ms | train_Loss: 9.348 | train_Acc: 0.485% (16/3 33/1000
+ [==>..............................................................]  Step: 138ms | Tot: 4s596ms | train_Loss: 9.348 | train_Acc: 0.485% (16/3 33/1000
+ [==>..............................................................]  Step: 138ms | Tot: 4s596ms | train_Loss: 9.348 | train_Acc: 0.485% (16/3 33/1000
+ [==>..............................................................]  Step: 138ms | Tot: 4s596ms | train_Loss: 9.348 | train_Acc: 0.485% (16/3 33/1000
+ [==>..............................................................]  Step: 138ms | Tot: 4s596ms | train_Loss: 9.348 | train_Acc: 0.485% (16/3 33/1000
+ [==>..............................................................]  Step: 138ms | Tot: 4s596ms | train_Loss: 9.348 | train_Acc: 0.485% (16/3 33/1000
+ [==>..............................................................]  Step: 138ms | Tot: 4s596ms | train_Loss: 9.348 | train_Acc: 0.485% (16/3 33/1000
+ [==>..............................................................]  Step: 138ms | Tot: 4s596ms | train_Loss: 9.348 | train_Acc: 0.485% (16/3 33/1000
+ [==>..............................................................]  Step: 138ms | Tot: 4s596ms | train_Loss: 9.348 | train_Acc: 0.485% (16/3 33/1000
+ [==>..............................................................]  Step: 138ms | Tot: 4s596ms | train_Loss: 9.348 | train_Acc: 0.485% (16/3 33/1000
+ [==>..............................................................]  Step: 138ms | Tot: 4s596ms | train_Loss: 9.348 | train_Acc: 0.485% (16/3 33/1000
+ [==>..............................................................]  Step: 138ms | Tot: 4s596ms | train_Loss: 9.348 | train_Acc: 0.485% (16/3 33/1000
+ [==>..............................................................]  Step: 138ms | Tot: 4s596ms | train_Loss: 9.348 | train_Acc: 0.485% (16/3 33/1000
+ [==>..............................................................]  Step: 138ms | Tot: 4s596ms | train_Loss: 9.348 | train_Acc: 0.485% (16/3 33/1000
+ [==>..............................................................]  Step: 138ms | Tot: 4s596ms | train_Loss: 9.348 | train_Acc: 0.485% (16/3 33/1000
+ [==>..............................................................]  Step: 138ms | Tot: 4s596ms | train_Loss: 9.348 | train_Acc: 0.485% (16/3 33/1000
+ [==>..............................................................]  Step: 138ms | Tot: 4s596ms | train_Loss: 9.348 | train_Acc: 0.485% (16/3 33/1000
+ [==>..............................................................]  Step: 138ms | Tot: 4s596ms | train_Loss: 9.348 | train_Acc: 0.485% (16/3 33/1000
+ [==>..............................................................]  Step: 138ms | Tot: 4s596ms | train_Loss: 9.348 | train_Acc: 0.485% (16/3 33/1000
+>>>best acc: 0, mean: 8.23, std: 6.19..............................]  Step: 96ms | Tot: 1s631ms | test_Loss: 4.866 | test_Acc: 3.833% (69/1 18/100 000
+>>>best acc: 0, mean: 5.69, std: 4.97..............................]  Step: 94ms | Tot: 3s485ms | test_Loss: 4.929 | test_Acc: 3.081% (114/3 37/100 00
+>>>best acc: 0, mean: 4.59, std: 4.24==>...........................]  Step: 97ms | Tot: 5s518ms | test_Loss: 4.974 | test_Acc: 2.621% (152/5 58/100 00
+>>>best acc: 0, mean: 4.02, std: 3.78===============>..............]  Step: 100ms | Tot: 7s485ms | test_Loss: 5.008 | test_Acc: 2.359% (184/7 78/100 0
+>>>best acc: 0, mean: 3.67, std: 3.42============================>.]  Step: 101ms | Tot: 9s570ms | test_Loss: 4.960 | test_Acc: 2.778% (275/9 99/100 0
+>>>best acc: 0, mean: 3.67, std: 3.42============================>.]  Step: 101ms | Tot: 9s570ms | test_Loss: 4.960 | test_Acc: 2.778% (275/9 99/100 0
+>>>best acc: 0, mean: 3.67, std: 3.42============================>.]  Step: 101ms | Tot: 9s570ms | test_Loss: 4.960 | test_Acc: 2.778% (275/9 99/100 0
+>>>best acc: 0, mean: 3.67, std: 3.42============================>.]  Step: 101ms | Tot: 9s570ms | test_Loss: 4.960 | test_Acc: 2.778% (275/9 99/100 0
+>>>best acc: 0, mean: 3.67, std: 3.42============================>.]  Step: 101ms | Tot: 9s570ms | test_Loss: 4.960 | test_Acc: 2.778% (275/9 99/100 0
+>>>best acc: 0, mean: 3.67, std: 3.42============================>.]  Step: 101ms | Tot: 9s570ms | test_Loss: 4.960 | test_Acc: 2.778% (275/9 99/100 0
+>>>best acc: 0, mean: 3.67, std: 3.42============================>.]  Step: 101ms | Tot: 9s570ms | test_Loss: 4.960 | test_Acc: 2.778% (275/9 99/100 0
+>>>best acc: 0, mean: 3.67, std: 3.42============================>.]  Step: 101ms | Tot: 9s570ms | test_Loss: 4.960 | test_Acc: 2.778% (275/9 99/100 0
+>>>best acc: 0, mean: 3.67, std: 3.42============================>.]  Step: 101ms | Tot: 9s570ms | test_Loss: 4.960 | test_Acc: 2.778% (275/9 99/100 0
+>>>best acc: 0, mean: 3.67, std: 3.42============================>.]  Step: 101ms | Tot: 9s570ms | test_Loss: 4.960 | test_Acc: 2.778% (275/9 99/100 0
+>>>best acc: 0, mean: 3.67, std: 3.42============================>.]  Step: 101ms | Tot: 9s570ms | test_Loss: 4.960 | test_Acc: 2.778% (275/9 99/100 0
+>>>best acc: 0, mean: 3.67, std: 3.42============================>.]  Step: 101ms | Tot: 9s570ms | test_Loss: 4.960 | test_Acc: 2.778% (275/9 99/100 0
+>>>best acc: 0, mean: 3.67, std: 3.42============================>.]  Step: 101ms | Tot: 9s570ms | test_Loss: 4.960 | test_Acc: 2.778% (275/9 99/100 0
+>>>best acc: 0, mean: 3.67, std: 3.42============================>.]  Step: 101ms | Tot: 9s570ms | test_Loss: 4.960 | test_Acc: 2.778% (275/9 99/100 0
+>>>best acc: 0, mean: 3.67, std: 3.42============================>.]  Step: 101ms | Tot: 9s570ms | test_Loss: 4.960 | test_Acc: 2.778% (275/9 99/100 0
+>>>best acc: 0, mean: 3.67, std: 3.42============================>.]  Step: 101ms | Tot: 9s570ms | test_Loss: 4.960 | test_Acc: 2.778% (275/9 99/100 0
+>>>best acc: 0, mean: 3.67, std: 3.42============================>.]  Step: 101ms | Tot: 9s570ms | test_Loss: 4.960 | test_Acc: 2.778% (275/9 99/100 0
+>>>best acc: 0, mean: 3.67, std: 3.42============================>.]  Step: 101ms | Tot: 9s570ms | test_Loss: 4.960 | test_Acc: 2.778% (275/9 99/100 0
+>>>best acc: 0, mean: 3.67, std: 3.42============================>.]  Step: 101ms | Tot: 9s570ms | test_Loss: 4.960 | test_Acc: 2.778% (275/9 99/100 0
+>>>best acc: 0, mean: 3.67, std: 3.42============================>.]  Step: 101ms | Tot: 9s570ms | test_Loss: 4.960 | test_Acc: 2.778% (275/9 99/100 0
+>>>best acc: 0, mean: 3.67, std: 3.42============================>.]  Step: 101ms | Tot: 9s570ms | test_Loss: 4.960 | test_Acc: 2.778% (275/9 99/100 0
+>>>best acc: 0, mean: 3.67, std: 3.42============================>.]  Step: 101ms | Tot: 9s570ms | test_Loss: 4.960 | test_Acc: 2.778% (275/9 99/100 0
+>>>best acc: 0, mean: 3.67, std: 3.42============================>.]  Step: 101ms | Tot: 9s570ms | test_Loss: 4.960 | test_Acc: 2.778% (275/9 99/100 0
+>>>best acc: 0, mean: 3.67, std: 3.42============================>.]  Step: 101ms | Tot: 9s570ms | test_Loss: 4.960 | test_Acc: 2.778% (275/9 99/100 0
+>>>best acc: 0, mean: 3.67, std: 3.42============================>.]  Step: 101ms | Tot: 9s570ms | test_Loss: 4.960 | test_Acc: 2.778% (275/9 99/100 0
+>>>best acc: 0, mean: 3.67, std: 3.42============================>.]  Step: 101ms | Tot: 9s570ms | test_Loss: 4.960 | test_Acc: 2.778% (275/9 99/100 0
+>>>best acc: 0, mean: 3.67, std: 3.42============================>.]  Step: 101ms | Tot: 9s570ms | test_Loss: 4.960 | test_Acc: 2.778% (275/9 99/100 0
+>>>best acc: 0, mean: 3.67, std: 3.42============================>.]  Step: 101ms | Tot: 9s570ms | test_Loss: 4.960 | test_Acc: 2.778% (275/9 99/100 0
+>>>best acc: 0, mean: 3.67, std: 3.42============================>.]  Step: 101ms | Tot: 9s570ms | test_Loss: 4.960 | test_Acc: 2.778% (275/9 99/100 0
+>>>best acc: 0, mean: 3.67, std: 3.42============================>.]  Step: 101ms | Tot: 9s570ms | test_Loss: 4.960 | test_Acc: 2.778% (275/9 99/100 0
+>>>best acc: 0, mean: 3.67, std: 3.42============================>.]  Step: 101ms | Tot: 9s570ms | test_Loss: 4.960 | test_Acc: 2.778% (275/9 99/100 0
+>>>best acc: 0, mean: 3.67, std: 3.42============================>.]  Step: 101ms | Tot: 9s570ms | test_Loss: 4.960 | test_Acc: 2.778% (275/9 99/100 0
+>>>best acc: 0, mean: 3.67, std: 3.42============================>.]  Step: 101ms | Tot: 9s570ms | test_Loss: 4.960 | test_Acc: 2.778% (275/9 99/100 0
+>>>best acc: 0, mean: 3.67, std: 3.42============================>.]  Step: 101ms | Tot: 9s570ms | test_Loss: 4.960 | test_Acc: 2.778% (275/9 99/100 0
+>>>best acc: 0, mean: 3.67, std: 3.42============================>.]  Step: 101ms | Tot: 9s570ms | test_Loss: 4.960 | test_Acc: 2.778% (275/9 99/100 0
+>>>best acc: 0, mean: 3.67, std: 3.42============================>.]  Step: 101ms | Tot: 9s570ms | test_Loss: 4.960 | test_Acc: 2.778% (275/9 99/100 0
+>>>best acc: 0, mean: 3.67, std: 3.42============================>.]  Step: 101ms | Tot: 9s570ms | test_Loss: 4.960 | test_Acc: 2.778% (275/9 99/100 0
+>>>best acc: 0, mean: 3.67, std: 3.42============================>.]  Step: 101ms | Tot: 9s570ms | test_Loss: 4.960 | test_Acc: 2.778% (275/9 99/100 0
+>>>best acc: 0, mean: 3.67, std: 3.42============================>.]  Step: 101ms | Tot: 9s570ms | test_Loss: 4.960 | test_Acc: 2.778% (275/9 99/100 0
+>>>best acc: 0, mean: 3.67, std: 3.42============================>.]  Step: 101ms | Tot: 9s570ms | test_Loss: 4.960 | test_Acc: 2.778% (275/9 99/100 0
+>>>best acc: 0, mean: 3.67, std: 3.42============================>.]  Step: 101ms | Tot: 9s570ms | test_Loss: 4.960 | test_Acc: 2.778% (275/9 99/100 0
+>>>best acc: 0, mean: 3.67, std: 3.42============================>.]  Step: 101ms | Tot: 9s570ms | test_Loss: 4.960 | test_Acc: 2.778% (275/9 99/100 0
+>>>best acc: 0, mean: 3.67, std: 3.42============================>.]  Step: 101ms | Tot: 9s570ms | test_Loss: 4.960 | test_Acc: 2.778% (275/9 99/100 0
+>>>best acc: 0, mean: 3.67, std: 3.42============================>.]  Step: 101ms | Tot: 9s570ms | test_Loss: 4.960 | test_Acc: 2.778% (275/9 99/100 0
+>>>best acc: 0, mean: 3.67, std: 3.42============================>.]  Step: 101ms | Tot: 9s570ms | test_Loss: 4.960 | test_Acc: 2.778% (275/9 99/100 0
+>>>best acc: 0, mean: 3.67, std: 3.42============================>.]  Step: 101ms | Tot: 9s570ms | test_Loss: 4.960 | test_Acc: 2.778% (275/9 99/100 0
+>>>best acc: 0, mean: 3.67, std: 3.42============================>.]  Step: 101ms | Tot: 9s570ms | test_Loss: 4.960 | test_Acc: 2.778% (275/9 99/100 0
+>>>best acc: 0, mean: 3.67, std: 3.42============================>.]  Step: 101ms | Tot: 9s570ms | test_Loss: 4.960 | test_Acc: 2.778% (275/9 99/100 0
+>>>best acc: 0, mean: 3.67, std: 3.42============================>.]  Step: 101ms | Tot: 9s570ms | test_Loss: 4.960 | test_Acc: 2.778% (275/9 99/100 0
+>>>best acc: 0, mean: 3.67, std: 3.42============================>.]  Step: 101ms | Tot: 9s570ms | test_Loss: 4.960 | test_Acc: 2.778% (275/9 99/100 0
+>>>best acc: 0, mean: 3.67, std: 3.42============================>.]  Step: 101ms | Tot: 9s570ms | test_Loss: 4.960 | test_Acc: 2.778% (275/9 99/100 0
+>>>best acc: 0, mean: 3.67, std: 3.42============================>.]  Step: 101ms | Tot: 9s570ms | test_Loss: 4.960 | test_Acc: 2.778% (275/9 99/100 0
+>>>best acc: 0, mean: 3.67, std: 3.42============================>.]  Step: 101ms | Tot: 9s570ms | test_Loss: 4.960 | test_Acc: 2.778% (275/9 99/100 0
+>>>best acc: 0, mean: 3.67, std: 3.42============================>.]  Step: 101ms | Tot: 9s570ms | test_Loss: 4.960 | test_Acc: 2.778% (275/9 99/100 0
+>>>best acc: 0, mean: 3.67, std: 3.42============================>.]  Step: 101ms | Tot: 9s570ms | test_Loss: 4.960 | test_Acc: 2.778% (275/9 99/100 0
+>>>best acc: 0, mean: 3.67, std: 3.42============================>.]  Step: 101ms | Tot: 9s570ms | test_Loss: 4.960 | test_Acc: 2.778% (275/9 99/100 0
+>>>best acc: 0, mean: 3.67, std: 3.42============================>.]  Step: 101ms | Tot: 9s570ms | test_Loss: 4.960 | test_Acc: 2.778% (275/9 99/100 0
+>>>best acc: 0, mean: 3.67, std: 3.42============================>.]  Step: 101ms | Tot: 9s570ms | test_Loss: 4.960 | test_Acc: 2.778% (275/9 99/100 0
+>>>best acc: 0, mean: 3.67, std: 3.42============================>.]  Step: 101ms | Tot: 9s570ms | test_Loss: 4.960 | test_Acc: 2.778% (275/9 99/100 0
+>>>best acc: 0, mean: 3.67, std: 3.42============================>.]  Step: 101ms | Tot: 9s570ms | test_Loss: 4.960 | test_Acc: 2.778% (275/9 99/100 0
+>>>best acc: 0, mean: 3.67, std: 3.42============================>.]  Step: 101ms | Tot: 9s570ms | test_Loss: 4.960 | test_Acc: 2.778% (275/9 99/100 0
+>>>best acc: 0, mean: 3.67, std: 3.42============================>.]  Step: 101ms | Tot: 9s570ms | test_Loss: 4.960 | test_Acc: 2.778% (275/9 99/100 0
+>>>best acc: 0, mean: 3.67, std: 3.42============================>.]  Step: 101ms | Tot: 9s570ms | test_Loss: 4.960 | test_Acc: 2.778% (275/9 99/100 0
+>>>best acc: 0, mean: 3.67, std: 3.42============================>.]  Step: 101ms | Tot: 9s570ms | test_Loss: 4.960 | test_Acc: 2.778% (275/9 99/100 0
+>>>best acc: 0, mean: 3.67, std: 3.42============================>.]  Step: 101ms | Tot: 9s570ms | test_Loss: 4.960 | test_Acc: 2.778% (275/9 99/100 0
+>>>best acc: 2.8, mean: 8.51, std: 3.55............................]  Step: 88ms | Tot: 1s391ms | test_Loss: 4.575 | test_Acc: 6.167% (111/1 18/100  0
+>>>best acc: 2.8, mean: 7.52, std: 2.51............................]  Step: 80ms | Tot: 3s344ms | test_Loss: 4.498 | test_Acc: 7.429% (312/4 42/100  0
+>>>best acc: 2.8, mean: 7.29, std: 2.02=====>......................]  Step: 87ms | Tot: 5s376ms | test_Loss: 4.513 | test_Acc: 6.478% (434/6 67/100  0
+>>>best acc: 2.8, mean: 6.94, std: 1.82======================>.....]  Step: 84ms | Tot: 7s520ms | test_Loss: 4.571 | test_Acc: 5.554% (511/9 92/100  0
+>>>best acc: 2.8, mean: 6.94, std: 1.82======================>.....]  Step: 84ms | Tot: 7s520ms | test_Loss: 4.571 | test_Acc: 5.554% (511/9 92/100  0
+>>>best acc: 2.8, mean: 6.94, std: 1.82======================>.....]  Step: 84ms | Tot: 7s520ms | test_Loss: 4.571 | test_Acc: 5.554% (511/9 92/100  0
+>>>best acc: 2.8, mean: 6.94, std: 1.82======================>.....]  Step: 84ms | Tot: 7s520ms | test_Loss: 4.571 | test_Acc: 5.554% (511/9 92/100  0
+>>>best acc: 2.8, mean: 6.94, std: 1.82======================>.....]  Step: 84ms | Tot: 7s520ms | test_Loss: 4.571 | test_Acc: 5.554% (511/9 92/100  0
+>>>best acc: 2.8, mean: 6.94, std: 1.82======================>.....]  Step: 84ms | Tot: 7s520ms | test_Loss: 4.571 | test_Acc: 5.554% (511/9 92/100  0
+>>>best acc: 2.8, mean: 6.94, std: 1.82======================>.....]  Step: 84ms | Tot: 7s520ms | test_Loss: 4.571 | test_Acc: 5.554% (511/9 92/100  0
+>>>best acc: 2.8, mean: 6.94, std: 1.82======================>.....]  Step: 84ms | Tot: 7s520ms | test_Loss: 4.571 | test_Acc: 5.554% (511/9 92/100  0
+>>>best acc: 2.8, mean: 6.94, std: 1.82======================>.....]  Step: 84ms | Tot: 7s520ms | test_Loss: 4.571 | test_Acc: 5.554% (511/9 92/100  0
+>>>best acc: 2.8, mean: 6.94, std: 1.82======================>.....]  Step: 84ms | Tot: 7s520ms | test_Loss: 4.571 | test_Acc: 5.554% (511/9 92/100  0
+>>>best acc: 2.8, mean: 6.94, std: 1.82======================>.....]  Step: 84ms | Tot: 7s520ms | test_Loss: 4.571 | test_Acc: 5.554% (511/9 92/100  0

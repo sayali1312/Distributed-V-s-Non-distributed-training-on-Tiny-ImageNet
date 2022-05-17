@@ -1,0 +1,27 @@
+wandb: Currently logged in as: mnk2978 (mrunal). Use `wandb login --relogin` to force relogin
+wandb: Tracking run with wandb version 0.12.16
+wandb: Run data is saved locally in /scratch/kp2670/hpml_project/datamodelparallel/wandb/run-20220517_022515-2vlyn3jq
+wandb: Run `wandb offline` to turn off syncing.
+wandb: Syncing run ResNet50
+wandb: ⭐️ View project at https://wandb.ai/mrunal/TinyImagenetGpipe
+wandb: 🚀 View run at https://wandb.ai/mrunal/TinyImagenetGpipe/runs/2vlyn3jq
+wandb: Network error (ReadTimeout), entering retry loop.
+wandb: ERROR Error while calling W&B API: dial tcp 34.68.206.48:3307: connect: connection refused (<Response [500]>)
+wandb: ERROR Error while calling W&B API: dial tcp 34.68.206.48:3307: connect: connection refused (<Response [500]>)
+wandb: ERROR Error while calling W&B API: dial tcp 34.68.206.48:3307: connect: connection refused (<Response [500]>)
+wandb: Waiting for W&B process to finish... (success).
+wandb: - 0.001 MB of 0.001 MB uploaded (0.000 MB deduped)wandb: \ 0.001 MB of 0.001 MB uploaded (0.000 MB deduped)wandb: | 0.001 MB of 9.327 MB uploaded (0.000 MB deduped)wandb: / 0.750 MB of 9.327 MB uploaded (0.000 MB deduped)wandb: - 9.327 MB of 9.327 MB uploaded (0.000 MB deduped)wandb: \ 9.327 MB of 9.327 MB uploaded (0.000 MB deduped)wandb: | 9.327 MB of 9.327 MB uploaded (0.000 MB deduped)wandb: / 9.327 MB of 9.327 MB uploaded (0.000 MB deduped)wandb: - 9.327 MB of 9.327 MB uploaded (0.000 MB deduped)wandb: \ 9.327 MB of 9.327 MB uploaded (0.000 MB deduped)wandb: | 9.327 MB of 9.327 MB uploaded (0.000 MB deduped)wandb:                                                                                
+wandb: 
+wandb: Run history:
+wandb:  test accuracy ▁▂▃▄▅▅▆▆▇▇▇▇▇▇▇█████████████████████████
+wandb: train accuracy ▁▁▂▃▄▄▄▅▅▅▆▆▆▆▆▆▇▇▇▇▇▇▇▇▇▇▇▇▇███████████
+wandb:     train_loss █▇▆▅▄▄▄▃▃▃▃▃▂▂▂▂▂▂▂▂▂▂▂▂▂▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁
+wandb: 
+wandb: Run summary:
+wandb:  test accuracy 47.86
+wandb: train accuracy 62.236
+wandb:     train_loss 1122.60876
+wandb: 
+wandb: Synced ResNet50: https://wandb.ai/mrunal/TinyImagenetGpipe/runs/2vlyn3jq
+wandb: Synced 5 W&B file(s), 0 media file(s), 0 artifact file(s) and 0 other file(s)
+wandb: Find logs at: ./wandb/run-20220517_022515-2vlyn3jq/logs

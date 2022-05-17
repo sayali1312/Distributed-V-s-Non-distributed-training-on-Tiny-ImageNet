@@ -1,0 +1,98 @@
+2022-05-12 02:16:43,988 INFO    MainThread:3409621 [internal.py:wandb_internal():90] W&B internal server running at pid: 3409621, started at: 2022-05-12 02:16:43.988255
+2022-05-12 02:16:43,990 INFO    WriterThread:3409621 [datastore.py:open_for_write():75] open: /scratch/mnk2978/hpml/finalproj/ModelParallel/wandb/run-20220512_021643-5s0tyr4d/run-5s0tyr4d.wandb
+2022-05-12 02:16:43,991 DEBUG   SenderThread:3409621 [sender.py:send():232] send: header
+2022-05-12 02:16:43,991 DEBUG   SenderThread:3409621 [sender.py:send():232] send: run
+2022-05-12 02:16:44,890 DEBUG   HandlerThread:3409621 [handler.py:handle_request():141] handle_request: check_version
+2022-05-12 02:16:44,894 INFO    SenderThread:3409621 [dir_watcher.py:__init__():197] watching files in: /scratch/mnk2978/hpml/finalproj/ModelParallel/wandb/run-20220512_021643-5s0tyr4d/files
+2022-05-12 02:16:44,894 INFO    SenderThread:3409621 [sender.py:_start_run_threads():811] run started: 5s0tyr4d with start time 1652336203
+2022-05-12 02:16:44,894 DEBUG   SenderThread:3409621 [sender.py:send():232] send: summary
+2022-05-12 02:16:44,895 INFO    SenderThread:3409621 [sender.py:_save_file():948] saving file wandb-summary.json with policy end
+2022-05-12 02:16:44,895 DEBUG   SenderThread:3409621 [sender.py:send_request():246] send_request: check_version
+2022-05-12 02:16:44,922 DEBUG   HandlerThread:3409621 [handler.py:handle_request():141] handle_request: run_start
+2022-05-12 02:16:44,925 DEBUG   HandlerThread:3409621 [meta.py:__init__():35] meta init
+2022-05-12 02:16:44,925 DEBUG   HandlerThread:3409621 [meta.py:__init__():49] meta init done
+2022-05-12 02:16:44,925 DEBUG   HandlerThread:3409621 [meta.py:probe():209] probe
+2022-05-12 02:16:44,931 DEBUG   HandlerThread:3409621 [git.py:repo():29] git repository is invalid
+2022-05-12 02:16:44,931 DEBUG   HandlerThread:3409621 [meta.py:_save_pip():53] save pip
+2022-05-12 02:16:44,932 DEBUG   HandlerThread:3409621 [meta.py:_save_pip():67] save pip done
+2022-05-12 02:16:44,932 DEBUG   HandlerThread:3409621 [meta.py:_save_conda():74] save conda
+2022-05-12 02:16:45,896 INFO    Thread-7  :3409621 [dir_watcher.py:_on_file_created():244] file/dir created: /scratch/mnk2978/hpml/finalproj/ModelParallel/wandb/run-20220512_021643-5s0tyr4d/files/wandb-summary.json
+2022-05-12 02:16:45,896 INFO    Thread-7  :3409621 [dir_watcher.py:_on_file_created():244] file/dir created: /scratch/mnk2978/hpml/finalproj/ModelParallel/wandb/run-20220512_021643-5s0tyr4d/files/conda-environment.yaml
+2022-05-12 02:16:45,896 INFO    Thread-7  :3409621 [dir_watcher.py:_on_file_created():244] file/dir created: /scratch/mnk2978/hpml/finalproj/ModelParallel/wandb/run-20220512_021643-5s0tyr4d/files/requirements.txt
+2022-05-12 02:16:47,725 DEBUG   HandlerThread:3409621 [meta.py:_save_conda():84] save conda done
+2022-05-12 02:16:47,725 DEBUG   HandlerThread:3409621 [meta.py:probe():247] probe done
+2022-05-12 02:16:47,729 DEBUG   SenderThread:3409621 [sender.py:send():232] send: files
+2022-05-12 02:16:47,729 INFO    SenderThread:3409621 [sender.py:_save_file():948] saving file wandb-metadata.json with policy now
+2022-05-12 02:16:47,733 DEBUG   HandlerThread:3409621 [handler.py:handle_request():141] handle_request: stop_status
+2022-05-12 02:16:47,733 DEBUG   SenderThread:3409621 [sender.py:send_request():246] send_request: stop_status
+2022-05-12 02:16:47,790 DEBUG   SenderThread:3409621 [sender.py:send():232] send: telemetry
+2022-05-12 02:16:47,897 INFO    Thread-7  :3409621 [dir_watcher.py:_on_file_modified():257] file/dir modified: /scratch/mnk2978/hpml/finalproj/ModelParallel/wandb/run-20220512_021643-5s0tyr4d/files/conda-environment.yaml
+2022-05-12 02:16:47,897 INFO    Thread-7  :3409621 [dir_watcher.py:_on_file_created():244] file/dir created: /scratch/mnk2978/hpml/finalproj/ModelParallel/wandb/run-20220512_021643-5s0tyr4d/files/output.log
+2022-05-12 02:16:47,897 INFO    Thread-7  :3409621 [dir_watcher.py:_on_file_created():244] file/dir created: /scratch/mnk2978/hpml/finalproj/ModelParallel/wandb/run-20220512_021643-5s0tyr4d/files/wandb-metadata.json
+2022-05-12 02:16:48,091 INFO    Thread-11 :3409621 [upload_job.py:push():132] Uploaded file /state/partition1/job-19453351/tmpads2py8hwandb/1ub0v68f-wandb-metadata.json
+2022-05-12 02:16:49,898 INFO    Thread-7  :3409621 [dir_watcher.py:_on_file_modified():257] file/dir modified: /scratch/mnk2978/hpml/finalproj/ModelParallel/wandb/run-20220512_021643-5s0tyr4d/files/output.log
+2022-05-12 02:17:02,791 DEBUG   HandlerThread:3409621 [handler.py:handle_request():141] handle_request: stop_status
+2022-05-12 02:17:02,791 DEBUG   SenderThread:3409621 [sender.py:send_request():246] send_request: stop_status
+2022-05-12 02:17:13,416 DEBUG   SenderThread:3409621 [sender.py:send():232] send: stats
+2022-05-12 02:17:14,905 INFO    Thread-7  :3409621 [dir_watcher.py:_on_file_modified():257] file/dir modified: /scratch/mnk2978/hpml/finalproj/ModelParallel/wandb/run-20220512_021643-5s0tyr4d/files/config.yaml
+2022-05-12 02:17:16,011 DEBUG   SenderThread:3409621 [sender.py:send():232] send: telemetry
+2022-05-12 02:17:17,848 DEBUG   HandlerThread:3409621 [handler.py:handle_request():141] handle_request: stop_status
+2022-05-12 02:17:17,848 DEBUG   SenderThread:3409621 [sender.py:send_request():246] send_request: stop_status
+2022-05-12 02:17:17,906 INFO    Thread-7  :3409621 [dir_watcher.py:_on_file_modified():257] file/dir modified: /scratch/mnk2978/hpml/finalproj/ModelParallel/wandb/run-20220512_021643-5s0tyr4d/files/output.log
+2022-05-12 02:17:21,907 INFO    Thread-7  :3409621 [dir_watcher.py:_on_file_modified():257] file/dir modified: /scratch/mnk2978/hpml/finalproj/ModelParallel/wandb/run-20220512_021643-5s0tyr4d/files/output.log
+2022-05-12 02:17:23,908 INFO    Thread-7  :3409621 [dir_watcher.py:_on_file_modified():257] file/dir modified: /scratch/mnk2978/hpml/finalproj/ModelParallel/wandb/run-20220512_021643-5s0tyr4d/files/output.log
+2022-05-12 02:17:25,909 INFO    Thread-7  :3409621 [dir_watcher.py:_on_file_modified():257] file/dir modified: /scratch/mnk2978/hpml/finalproj/ModelParallel/wandb/run-20220512_021643-5s0tyr4d/files/output.log
+2022-05-12 02:17:27,909 INFO    Thread-7  :3409621 [dir_watcher.py:_on_file_modified():257] file/dir modified: /scratch/mnk2978/hpml/finalproj/ModelParallel/wandb/run-20220512_021643-5s0tyr4d/files/output.log
+2022-05-12 02:17:29,910 INFO    Thread-7  :3409621 [dir_watcher.py:_on_file_modified():257] file/dir modified: /scratch/mnk2978/hpml/finalproj/ModelParallel/wandb/run-20220512_021643-5s0tyr4d/files/output.log
+2022-05-12 02:17:31,910 INFO    Thread-7  :3409621 [dir_watcher.py:_on_file_modified():257] file/dir modified: /scratch/mnk2978/hpml/finalproj/ModelParallel/wandb/run-20220512_021643-5s0tyr4d/files/output.log
+2022-05-12 02:17:32,907 DEBUG   HandlerThread:3409621 [handler.py:handle_request():141] handle_request: stop_status
+2022-05-12 02:17:32,907 DEBUG   SenderThread:3409621 [sender.py:send_request():246] send_request: stop_status
+2022-05-12 02:17:33,911 INFO    Thread-7  :3409621 [dir_watcher.py:_on_file_modified():257] file/dir modified: /scratch/mnk2978/hpml/finalproj/ModelParallel/wandb/run-20220512_021643-5s0tyr4d/files/output.log
+2022-05-12 02:17:35,912 INFO    Thread-7  :3409621 [dir_watcher.py:_on_file_modified():257] file/dir modified: /scratch/mnk2978/hpml/finalproj/ModelParallel/wandb/run-20220512_021643-5s0tyr4d/files/output.log
+2022-05-12 02:17:37,912 INFO    Thread-7  :3409621 [dir_watcher.py:_on_file_modified():257] file/dir modified: /scratch/mnk2978/hpml/finalproj/ModelParallel/wandb/run-20220512_021643-5s0tyr4d/files/output.log
+2022-05-12 02:17:39,913 INFO    Thread-7  :3409621 [dir_watcher.py:_on_file_modified():257] file/dir modified: /scratch/mnk2978/hpml/finalproj/ModelParallel/wandb/run-20220512_021643-5s0tyr4d/files/output.log
+2022-05-12 02:17:41,913 INFO    Thread-7  :3409621 [dir_watcher.py:_on_file_modified():257] file/dir modified: /scratch/mnk2978/hpml/finalproj/ModelParallel/wandb/run-20220512_021643-5s0tyr4d/files/output.log
+2022-05-12 02:17:43,914 INFO    Thread-7  :3409621 [dir_watcher.py:_on_file_modified():257] file/dir modified: /scratch/mnk2978/hpml/finalproj/ModelParallel/wandb/run-20220512_021643-5s0tyr4d/files/output.log
+2022-05-12 02:17:43,917 DEBUG   SenderThread:3409621 [sender.py:send():232] send: stats
+2022-05-12 02:17:45,915 INFO    Thread-7  :3409621 [dir_watcher.py:_on_file_modified():257] file/dir modified: /scratch/mnk2978/hpml/finalproj/ModelParallel/wandb/run-20220512_021643-5s0tyr4d/files/output.log
+2022-05-12 02:17:45,915 INFO    Thread-7  :3409621 [dir_watcher.py:_on_file_modified():257] file/dir modified: /scratch/mnk2978/hpml/finalproj/ModelParallel/wandb/run-20220512_021643-5s0tyr4d/files/config.yaml
+2022-05-12 02:17:47,915 INFO    Thread-7  :3409621 [dir_watcher.py:_on_file_modified():257] file/dir modified: /scratch/mnk2978/hpml/finalproj/ModelParallel/wandb/run-20220512_021643-5s0tyr4d/files/output.log
+2022-05-12 02:17:47,990 DEBUG   HandlerThread:3409621 [handler.py:handle_request():141] handle_request: stop_status
+2022-05-12 02:17:47,990 DEBUG   SenderThread:3409621 [sender.py:send_request():246] send_request: stop_status
+2022-05-12 02:17:49,916 INFO    Thread-7  :3409621 [dir_watcher.py:_on_file_modified():257] file/dir modified: /scratch/mnk2978/hpml/finalproj/ModelParallel/wandb/run-20220512_021643-5s0tyr4d/files/output.log
+2022-05-12 02:17:51,916 INFO    Thread-7  :3409621 [dir_watcher.py:_on_file_modified():257] file/dir modified: /scratch/mnk2978/hpml/finalproj/ModelParallel/wandb/run-20220512_021643-5s0tyr4d/files/output.log
+2022-05-12 02:17:53,917 INFO    Thread-7  :3409621 [dir_watcher.py:_on_file_modified():257] file/dir modified: /scratch/mnk2978/hpml/finalproj/ModelParallel/wandb/run-20220512_021643-5s0tyr4d/files/output.log
+2022-05-12 02:17:55,918 INFO    Thread-7  :3409621 [dir_watcher.py:_on_file_modified():257] file/dir modified: /scratch/mnk2978/hpml/finalproj/ModelParallel/wandb/run-20220512_021643-5s0tyr4d/files/output.log
+2022-05-12 02:17:57,918 INFO    Thread-7  :3409621 [dir_watcher.py:_on_file_modified():257] file/dir modified: /scratch/mnk2978/hpml/finalproj/ModelParallel/wandb/run-20220512_021643-5s0tyr4d/files/output.log
+2022-05-12 02:17:59,919 INFO    Thread-7  :3409621 [dir_watcher.py:_on_file_modified():257] file/dir modified: /scratch/mnk2978/hpml/finalproj/ModelParallel/wandb/run-20220512_021643-5s0tyr4d/files/output.log
+2022-05-12 02:18:01,919 INFO    Thread-7  :3409621 [dir_watcher.py:_on_file_modified():257] file/dir modified: /scratch/mnk2978/hpml/finalproj/ModelParallel/wandb/run-20220512_021643-5s0tyr4d/files/output.log
+2022-05-12 02:18:03,056 DEBUG   HandlerThread:3409621 [handler.py:handle_request():141] handle_request: stop_status
+2022-05-12 02:18:03,056 DEBUG   SenderThread:3409621 [sender.py:send_request():246] send_request: stop_status
+2022-05-12 02:18:03,920 INFO    Thread-7  :3409621 [dir_watcher.py:_on_file_modified():257] file/dir modified: /scratch/mnk2978/hpml/finalproj/ModelParallel/wandb/run-20220512_021643-5s0tyr4d/files/output.log
+2022-05-12 02:18:05,920 INFO    Thread-7  :3409621 [dir_watcher.py:_on_file_modified():257] file/dir modified: /scratch/mnk2978/hpml/finalproj/ModelParallel/wandb/run-20220512_021643-5s0tyr4d/files/output.log
+2022-05-12 02:18:07,921 INFO    Thread-7  :3409621 [dir_watcher.py:_on_file_modified():257] file/dir modified: /scratch/mnk2978/hpml/finalproj/ModelParallel/wandb/run-20220512_021643-5s0tyr4d/files/output.log
+2022-05-12 02:18:09,922 INFO    Thread-7  :3409621 [dir_watcher.py:_on_file_modified():257] file/dir modified: /scratch/mnk2978/hpml/finalproj/ModelParallel/wandb/run-20220512_021643-5s0tyr4d/files/output.log
+2022-05-12 02:18:11,922 INFO    Thread-7  :3409621 [dir_watcher.py:_on_file_modified():257] file/dir modified: /scratch/mnk2978/hpml/finalproj/ModelParallel/wandb/run-20220512_021643-5s0tyr4d/files/output.log
+2022-05-12 02:18:13,923 INFO    Thread-7  :3409621 [dir_watcher.py:_on_file_modified():257] file/dir modified: /scratch/mnk2978/hpml/finalproj/ModelParallel/wandb/run-20220512_021643-5s0tyr4d/files/output.log
+2022-05-12 02:18:14,426 DEBUG   SenderThread:3409621 [sender.py:send():232] send: stats
+2022-05-12 02:18:15,923 INFO    Thread-7  :3409621 [dir_watcher.py:_on_file_modified():257] file/dir modified: /scratch/mnk2978/hpml/finalproj/ModelParallel/wandb/run-20220512_021643-5s0tyr4d/files/output.log
+2022-05-12 02:18:17,924 INFO    Thread-7  :3409621 [dir_watcher.py:_on_file_modified():257] file/dir modified: /scratch/mnk2978/hpml/finalproj/ModelParallel/wandb/run-20220512_021643-5s0tyr4d/files/output.log
+2022-05-12 02:18:18,115 DEBUG   HandlerThread:3409621 [handler.py:handle_request():141] handle_request: stop_status
+2022-05-12 02:18:18,115 DEBUG   SenderThread:3409621 [sender.py:send_request():246] send_request: stop_status
+2022-05-12 02:18:19,925 INFO    Thread-7  :3409621 [dir_watcher.py:_on_file_modified():257] file/dir modified: /scratch/mnk2978/hpml/finalproj/ModelParallel/wandb/run-20220512_021643-5s0tyr4d/files/output.log
+2022-05-12 02:18:21,925 INFO    Thread-7  :3409621 [dir_watcher.py:_on_file_modified():257] file/dir modified: /scratch/mnk2978/hpml/finalproj/ModelParallel/wandb/run-20220512_021643-5s0tyr4d/files/output.log
+2022-05-12 02:18:23,926 INFO    Thread-7  :3409621 [dir_watcher.py:_on_file_modified():257] file/dir modified: /scratch/mnk2978/hpml/finalproj/ModelParallel/wandb/run-20220512_021643-5s0tyr4d/files/output.log
+2022-05-12 02:18:25,926 INFO    Thread-7  :3409621 [dir_watcher.py:_on_file_modified():257] file/dir modified: /scratch/mnk2978/hpml/finalproj/ModelParallel/wandb/run-20220512_021643-5s0tyr4d/files/output.log
+2022-05-12 02:18:27,927 INFO    Thread-7  :3409621 [dir_watcher.py:_on_file_modified():257] file/dir modified: /scratch/mnk2978/hpml/finalproj/ModelParallel/wandb/run-20220512_021643-5s0tyr4d/files/output.log
+2022-05-12 02:18:29,927 INFO    Thread-7  :3409621 [dir_watcher.py:_on_file_modified():257] file/dir modified: /scratch/mnk2978/hpml/finalproj/ModelParallel/wandb/run-20220512_021643-5s0tyr4d/files/output.log
+2022-05-12 02:18:31,928 INFO    Thread-7  :3409621 [dir_watcher.py:_on_file_modified():257] file/dir modified: /scratch/mnk2978/hpml/finalproj/ModelParallel/wandb/run-20220512_021643-5s0tyr4d/files/output.log
+2022-05-12 02:18:33,174 DEBUG   HandlerThread:3409621 [handler.py:handle_request():141] handle_request: stop_status
+2022-05-12 02:18:33,174 DEBUG   SenderThread:3409621 [sender.py:send_request():246] send_request: stop_status
+2022-05-12 02:18:33,928 INFO    Thread-7  :3409621 [dir_watcher.py:_on_file_modified():257] file/dir modified: /scratch/mnk2978/hpml/finalproj/ModelParallel/wandb/run-20220512_021643-5s0tyr4d/files/output.log
+2022-05-12 02:18:35,929 INFO    Thread-7  :3409621 [dir_watcher.py:_on_file_modified():257] file/dir modified: /scratch/mnk2978/hpml/finalproj/ModelParallel/wandb/run-20220512_021643-5s0tyr4d/files/output.log
+2022-05-12 02:18:37,929 INFO    Thread-7  :3409621 [dir_watcher.py:_on_file_modified():257] file/dir modified: /scratch/mnk2978/hpml/finalproj/ModelParallel/wandb/run-20220512_021643-5s0tyr4d/files/output.log
+2022-05-12 02:18:39,930 INFO    Thread-7  :3409621 [dir_watcher.py:_on_file_modified():257] file/dir modified: /scratch/mnk2978/hpml/finalproj/ModelParallel/wandb/run-20220512_021643-5s0tyr4d/files/output.log
+2022-05-12 02:18:41,930 INFO    Thread-7  :3409621 [dir_watcher.py:_on_file_modified():257] file/dir modified: /scratch/mnk2978/hpml/finalproj/ModelParallel/wandb/run-20220512_021643-5s0tyr4d/files/output.log
+2022-05-12 02:18:43,931 INFO    Thread-7  :3409621 [dir_watcher.py:_on_file_modified():257] file/dir modified: /scratch/mnk2978/hpml/finalproj/ModelParallel/wandb/run-20220512_021643-5s0tyr4d/files/output.log
+2022-05-12 02:18:44,978 DEBUG   SenderThread:3409621 [sender.py:send():232] send: stats
+2022-05-12 02:18:45,931 INFO    Thread-7  :3409621 [dir_watcher.py:_on_file_modified():257] file/dir modified: /scratch/mnk2978/hpml/finalproj/ModelParallel/wandb/run-20220512_021643-5s0tyr4d/files/output.log

@@ -1,0 +1,3 @@
+epoch: 0/ total epoch: 90 best_acc: 2.81 train_acc: 1.377 %, test_acc: 2.81 % train_loss: 5.3874080023765565,e test_loss: 4.928173749446869 
+epoch: 1/ total epoch: 90 best_acc: 7.43 train_acc: 4.66 %, test_acc: 7.43 % train_loss: 4.7068503241539,e test_loss: 4.411464335918427 
+epoch: 2/ total epoch: 90 best_acc: 13.35 train_acc: 11.052 %, test_acc: 13.35 % train_loss: 4.171187560081482,e test_loss: 4.102045843601227 

@@ -1,98 +1,107 @@
-import threading
+"""A ResNet implementation but using :class:`nn.Sequential`. :func:`resnet101`
+returns a :class:`nn.Sequential` instead of ``ResNet``.
 
-import torch
-import torch.nn as nn
+This code is transformed :mod:`torchvision.models.resnet`.
 
-from torchvision.models.resnet import Bottleneck
+"""
+from collections import OrderedDict
+from typing import Any, List
 
-num_classes = 1000
+from torch import nn
 
+from block import bottleneck, basicblock
+from flatten_sequential import flatten_sequential
 
-def conv1x1(in_planes, out_planes, stride=1):
-    return nn.Conv2d(in_planes, out_planes, kernel_size=1, stride=stride, bias=False)
+__all__ = ['inet_resnet18', 'inet_resnet34', 'inet_resnet50', 'inet_resnet101', 'inet_resnet152']
 
+def build_resnet(layers, block, num_classes=200, inplace=False):
+    """Builds a ResNet as a simple sequential model.
 
-class ResNetBase(nn.Module):
-    def __init__(self, block, inplanes, num_classes=200,
-                groups=1, width_per_group=64, norm_layer=None):
-        super(ResNetBase, self).__init__()
+    Note:
+        The implementation is copied from :mod:`torchvision.models.resnet`.
 
-        self._lock = threading.Lock()
-        self._block = block
-        self._norm_layer = nn.BatchNorm2d
-        self.inplanes = inplanes
-        self.dilation = 1
-        self.groups = groups
-        self.base_width = width_per_group
+    """
+    inplanes = 64
+    if block.__name__ == 'basicblock':
+        expansion = 1
+    elif block.__name__ == 'bottleneck':
+        expansion = 4
+    else:
+        raise Exception('Invalid block')
 
-    def _make_layer(self, planes, blocks, stride=1):
-        norm_layer = self._norm_layer
+    def make_layer(block, planes, blocks, stride=1, inplace=False):
+        nonlocal inplanes
+        nonlocal expansion
+
         downsample = None
-        previous_dilation = self.dilation
-        if stride != 1 or self.inplanes != planes * self._block.expansion:
+        if stride != 1 or inplanes != planes * expansion:
             downsample = nn.Sequential(
-                conv1x1(self.inplanes, planes * self._block.expansion, stride),
-                norm_layer(planes * self._block.expansion),
+                nn.Conv2d(inplanes, planes * expansion,
+                          kernel_size=1, stride=stride, bias=False),
+                nn.BatchNorm2d(planes * expansion),
             )
 
         layers = []
-        layers.append(self._block(self.inplanes, planes, stride, downsample, self.groups,
-                                self.base_width, previous_dilation, norm_layer))
-        self.inplanes = planes * self._block.expansion
+        layers.append(block(inplanes, planes, stride, downsample, inplace))
+        inplanes = planes * expansion
         for _ in range(1, blocks):
-            layers.append(self._block(self.inplanes, planes, groups=self.groups,
-                                    base_width=self.base_width, dilation=self.dilation,
-                                    norm_layer=norm_layer))
+            layers.append(block(inplanes, planes, inplace=inplace))
 
         return nn.Sequential(*layers)
 
-    def parameter_rrefs(self):
-        return [RRef(p) for p in self.parameters()]
-class ResNetShard1(ResNetBase):
-    def __init__(self, device, *args, **kwargs):
-        super(ResNetShard1, self).__init__(
-            Bottleneck, 64, num_classes=num_classes, *args, **kwargs)
+    # Build ResNet as a sequential model.
+    model = nn.Sequential(OrderedDict([
+        ('conv1', nn.Conv2d(3, 64, kernel_size=7, stride=2, padding=3, bias=False)),
+        ('bn1', nn.BatchNorm2d(64)),
+        ('relu', nn.ReLU()),
+        ('maxpool', nn.MaxPool2d(kernel_size=3, stride=2, padding=1)),
 
-        self.device = device
-        self.seq = nn.Sequential(
-            nn.Conv2d(3, self.inplanes, kernel_size=7, stride=2, padding=3, bias=False),
-            self._norm_layer(self.inplanes),
-            nn.ReLU(inplace=True),
-            nn.MaxPool2d(kernel_size=3, stride=2, padding=1),
-            self._make_layer(64, 3),
-            self._make_layer(128, 4, stride=2)
-        ).to(self.device)
+        ('layer1', make_layer(block, 64, layers[0], inplace=inplace)),
+        ('layer2', make_layer(block, 128, layers[1], stride=2, inplace=inplace)),
+        ('layer3', make_layer(block, 256, layers[2], stride=2, inplace=inplace)),
+        ('layer4', make_layer(block, 512, layers[3], stride=2, inplace=inplace)),
 
-        for m in self.modules():
-            if isinstance(m, nn.Conv2d):
-                nn.init.kaiming_normal_(m.weight, mode='fan_out', nonlinearity='relu')
-            elif isinstance(m, nn.BatchNorm2d):
-                nn.init.constant_(m.weight, 1)
-                nn.init.constant_(m.bias, 0)
+        ('avgpool', nn.AdaptiveAvgPool2d((1, 1))),
+        ('flat', nn.Flatten()),
+        ('fc', nn.Linear(512 * expansion, num_classes)),
+    ]))
 
-    def forward(self, x_rref):
-        x = x_rref.to_here().to(self.device)
-        with self._lock:
-            out =  self.seq(x)
-        return out.cpu()
+    # Flatten nested sequentials.
+    model = flatten_sequential(model)
+
+    # Initialize weights for Conv2d and BatchNorm2d layers.
+    # Stolen from torchvision-0.4.0.
+    def init_weight(m: nn.Module) -> None:
+        if isinstance(m, nn.Conv2d):
+            nn.init.kaiming_normal_(m.weight, mode='fan_out', nonlinearity='relu')
+            return
+
+        if isinstance(m, nn.BatchNorm2d):
+            nn.init.constant_(m.weight, 1)
+            nn.init.constant_(m.bias, 0)
+            return
+
+    model.apply(init_weight)
+
+    return model
 
 
-class ResNetShard2(ResNetBase):
-    def __init__(self, device, *args, **kwargs):
-        super(ResNetShard2, self).__init__(
-            Bottleneck, 512, num_classes=num_classes, *args, **kwargs)
+def inet_resnet18(**kwargs: Any) -> nn.Sequential:
+    """Constructs a ResNet-101 model."""
+    return build_resnet([2, 2, 2, 2], basicblock, **kwargs)
 
-        self.device = device
-        self.seq = nn.Sequential(
-            self._make_layer(256, 6, stride=2),
-            self._make_layer(512, 3, stride=2),
-            nn.AdaptiveAvgPool2d((1, 1)),
-        ).to(self.device)
+def inet_resnet34(**kwargs: Any) -> nn.Sequential:
+    """Constructs a ResNet-101 model."""
+    return build_resnet([3, 4, 6, 3], basicblock, **kwargs)
 
-        self.fc =  nn.Linear(512 * self._block.expansion, num_classes).to(self.device)
+def inet_resnet50(**kwargs: Any) -> nn.Sequential:
+    """Constructs a ResNet-101 model."""
+    return build_resnet([3, 4, 6, 3], bottleneck, **kwargs)
 
-    def forward(self, x_rref):
-        x = x_rref.to_here().to(self.device)
-        with self._lock:
-            out = self.fc(torch.flatten(self.seq(x), 1))
-        return out.cpu()
+def inet_resnet101(**kwargs: Any) -> nn.Sequential:
+    """Constructs a ResNet-101 model."""
+    return build_resnet([3, 4, 23, 3], bottleneck, **kwargs)
+
+def inet_resnet152(**kwargs: Any) -> nn.Sequential:
+    """Constructs a ResNet-101 model."""
+    return build_resnet([3, 8, 36, 3], bottleneck, **kwargs)

@@ -1,0 +1,18 @@
+{
+    "os": "Linux-4.18.0-305.28.1.el8_4.x86_64-x86_64-with-glibc2.10",
+    "python": "3.8.3",
+    "heartbeatAt": "2022-05-12T06:30:16.611602",
+    "startedAt": "2022-05-12T06:30:15.548148",
+    "docker": null,
+    "gpu": "Quadro RTX 8000",
+    "gpu_count": 2,
+    "cpu_count": 48,
+    "cuda": null,
+    "args": [],
+    "state": "running",
+    "program": "Resnet50_mp.py",
+    "codePath": "Resnet50_mp.py",
+    "host": "gr047.hpc.nyu.edu",
+    "username": "mnk2978",
+    "executable": "/share/apps/anaconda3/2020.07/bin/python"
+}

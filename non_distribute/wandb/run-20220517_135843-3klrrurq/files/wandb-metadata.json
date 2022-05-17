@@ -1,0 +1,18 @@
+{
+    "os": "Linux-4.18.0-305.28.1.el8_4.x86_64-x86_64-with-glibc2.2.5",
+    "python": "3.8.6",
+    "heartbeatAt": "2022-05-17T17:58:44.190209",
+    "startedAt": "2022-05-17T17:58:43.318454",
+    "docker": null,
+    "gpu": "Quadro RTX 8000",
+    "gpu_count": 1,
+    "cpu_count": 48,
+    "cuda": null,
+    "args": [],
+    "state": "running",
+    "program": "main.py",
+    "codePath": "main.py",
+    "host": "gr049.hpc.nyu.edu",
+    "username": "mnk2978",
+    "executable": "/share/apps/python/3.8.6/intel/bin/python"
+}

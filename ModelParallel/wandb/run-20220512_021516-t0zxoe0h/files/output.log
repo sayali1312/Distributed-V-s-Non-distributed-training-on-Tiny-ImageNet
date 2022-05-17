@@ -1,0 +1,14 @@
+
+==> Preparing data..
+Traceback (most recent call last):
+  File "Resnet50_mp.py", line 181, in <module>
+    trainset = torchvision.datasets.ImageFolder(
+  File "/home/mnk2978/.local/lib/python3.8/site-packages/torchvision/datasets/folder.py", line 310, in __init__
+    super().__init__(
+  File "/home/mnk2978/.local/lib/python3.8/site-packages/torchvision/datasets/folder.py", line 145, in __init__
+    classes, class_to_idx = self.find_classes(self.root)
+  File "/home/mnk2978/.local/lib/python3.8/site-packages/torchvision/datasets/folder.py", line 219, in find_classes
+    return find_classes(directory)
+  File "/home/mnk2978/.local/lib/python3.8/site-packages/torchvision/datasets/folder.py", line 41, in find_classes
+    classes = sorted(entry.name for entry in os.scandir(directory) if entry.is_dir())
+FileNotFoundError: [Errno 2] No such file or directory: '../../tiny-imagenet-200/train'
