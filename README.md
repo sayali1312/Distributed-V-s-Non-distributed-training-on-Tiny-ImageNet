@@ -6,16 +6,20 @@ Each folder has a batch file.
 
 To run the experiment for non distributed training for example
 
-`python main.py`
+`cd non_distribute` 
+
+`sbatch batch.sh`
 
 To run the experiment of Data Parallel (ddp) for example
 
 ` cd dataparallel `
+
 ` sbatch dparallel.sh `
 
 To run the experiment of Model Parallel for example
 
 ` cd ModelParallel `
+
 `sbatch mparallel.sh`
 
 
