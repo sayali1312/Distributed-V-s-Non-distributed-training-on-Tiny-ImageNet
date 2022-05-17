@@ -30,7 +30,7 @@ import matplotlib.pyplot as plt
 from torchsummary import summary
 import numpy as np
 import time
-from util.cutout import Cutout
+from cutout import Cutout
 
 wandb.init(project="TinyImagenetModelParallel", name="Resnet50ModelParallel")
 
