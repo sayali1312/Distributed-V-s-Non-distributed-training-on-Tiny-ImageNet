@@ -34,8 +34,12 @@ For Model Parallel:
 
 <img width="320" alt="image" src="https://user-images.githubusercontent.com/46345142/168456753-1b5ea1cf-174a-48ac-bf61-f44b1b53a21e.png">
 
-![WhatsApp Image 2022-05-17 at 5 44 39 AM](https://user-images.githubusercontent.com/63931061/168851532-9651e8ea-48f5-4049-a0e9-889f49dc5cb9.jpeg)
+<img width="1009" alt="image" src="https://user-images.githubusercontent.com/63931061/168895691-be60b7c0-c58b-4bb4-bed1-d8dbedee8915.png">
 
-DISTRUBIUTED TRAINING
-![WhatsApp Image 2022-05-17 at 5 46 56 AM](https://user-images.githubusercontent.com/63931061/168851615-71992a74-4eaa-41c3-bafa-681e54f5d5f4.jpeg)
-![WhatsApp Image 2022-05-17 at 5 48 53 AM](https://user-images.githubusercontent.com/63931061/168851644-7f6a74b6-1e50-4a2e-a201-dfdc53336bdf.jpeg)
+<img width="1005" alt="image" src="https://user-images.githubusercontent.com/63931061/168895834-cba49c93-b17a-4d5c-b5e9-8f6852291ac4.png">
+<img width="1028" alt="image" src="https://user-images.githubusercontent.com/63931061/168895902-af4a6585-d1c9-47bf-9675-9d9a6aa40264.png">
+<img width="967" alt="image" src="https://user-images.githubusercontent.com/63931061/168895971-8dc3af59-7f38-415e-88da-fe6bda87b8b3.png">
+
+
+
+
